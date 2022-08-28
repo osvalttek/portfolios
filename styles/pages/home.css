@@ -1,0 +1,15 @@
+#text_principal{
+    justify-content: center;
+    font-size: 30px;
+    text-align: center;
+}
+
+
+/*Responsive*/
+@media (max-width: 500px) {
+    #text_principal{
+        justify-content: center;
+        font-size: 30px;
+        text-align: center;
+    }
+}

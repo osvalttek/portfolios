@@ -1,0 +1,11 @@
+.content{
+    background-color: bisque;
+    padding: 30px 30px;
+}
+
+.content_section{
+    background-color: blueviolet;
+    margin: 30px 0px;
+    padding: 20px;
+    display: flex;
+}
