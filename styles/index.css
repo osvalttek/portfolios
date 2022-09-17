@@ -11,3 +11,20 @@
     box-sizing: border-box;
 }
 
+.navbar{
+    background-color: var(--Color1) !important;
+}
+
+#navbarSupportedContent a:active{
+    color: var(--Color3);
+}
+
+#navbarSupportedContent a:hover{
+    color: var(--Color3);
+}
+
+#Home{
+    height: 90vh;
+    width: 100vw;
+    background-color: var(--Color1);
+}
