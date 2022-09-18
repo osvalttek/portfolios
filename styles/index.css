@@ -355,10 +355,11 @@ h1{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    width: 100%;
+    width: auto;
+    height: auto;
 }
 .Projects__CardProject img{
-    width: 50px;
+    width: auto;
     /* modificar tamaoñ de la imagen */
     height: 200px;
     border-radius: 10%;
@@ -387,6 +388,110 @@ h1{
 }
 
 
+@media only screen and (max-width:576px ) {
+    #Projects{
+        height: auto;
+        width: auto;
+        
+        background-color: var(--Color1);
+    }
+    #cardsProjects{
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+    #Projects #cardsProjects .Projects__CardProject{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+    }
+    #Projects .Projects__CardProject_Info{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        width: auto;
+        justify-content: space-evenly;
+    }
+    #Projects #cardsProjects .Projects__CardProject img{
+        width: 450px;
+        /* modificar tamaoñ de la imagen */
+        height: 300px;
+        border-radius: 10%;
+    }
+}
+@media only screen and (max-width:860px ) {
+    #Projects{
+        height: auto;
+        width: auto;
+        background-color: var(--Color1);
+    }
+    #cardsProjects{
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+    }
+    #Projects .Projects__CardProject{
+        display: flex;
+        flex-direction: column;
+        width: 50%;
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+    }
+    #Projects .Projects__CardProject_Info{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        width: auto;
+        justify-content: space-evenly;
+    }
+    .Projects__CardProject img{
+        width: 250px;
+        /* modificar tamaoñ de la imagen */
+        height: 200px;
+        border-radius: 10%;
+    }
+
+}
+
+@media only screen and (max-width:450px ) {
+    #Projects{
+        height: auto;
+        width: auto;
+        
+        background-color: var(--Color1);
+    }
+    #cardsProjects{
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+    #Projects #cardsProjects .Projects__CardProject{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+    }
+    #Projects .Projects__CardProject_Info{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        width: auto;
+        justify-content: space-evenly;
+    }
+    #Projects #cardsProjects .Projects__CardProject img{
+        width: 100%;
+        /* modificar tamaoñ de la imagen */
+        height: 300px;
+        border-radius: 10%;
+    }
+}
 
 #Contact{
     height: 90vh;
