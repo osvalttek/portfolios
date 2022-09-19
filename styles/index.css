@@ -20,8 +20,11 @@ body{
 .navbar{
     background-color: var(--Color1) !important;
     color: var(--Color2);
+   
+    font-family: var(--Fuente) !important;
+}
+header{
     position: sticky !important;
-    /* font-family: var(--Fuente) !important; */
 }
 
 #navbarSupportedContent a:active{
@@ -433,7 +436,7 @@ h1{
     height: auto;
 }
 .Projects__CardProject img{
-    width: auto;
+    width: 250px;
     /* modificar tamaoñ de la imagen */
     height: 200px;
     border-radius: 10%;
@@ -736,6 +739,10 @@ footer #Footer__Name{
 
 footer #Footer__Copyright{
     color: var(--Color2);
+}
+footer #Footer__Redes svg:hover{
+cursor: pointer;
+fill: var(--Color3);
 }
 
 @media only screen and (max-width:400px ){
