@@ -22,14 +22,96 @@ body {
 }
 
 .body {
-background-image: linear-gradient(var(--primaryColor),black);
+    background-image: linear-gradient(var(--primaryColor), black);
 }
 
-.header{
+.header {
     height: 10vh;
 }
+
+.navbar{
+    display: none;
+}
 .main {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+    margin-bottom: 7rem;
+}
+
+.main__h1 {
+    color: white;
+    font-size: 3rem;
+    max-width: 50vw;
+    text-align: center;
+    margin: 1rem;
+}
+
+.main__p--name {
+    font-size: 2rem;
+    margin: .5rem;
+    color: white;
+}
+
+.main__div--profileContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40vw;
+    height: 40vw;
+    background-color: var(--complementaryColor);
+    border-radius: 40vw;
+}
+
+.main__img--profilePicture {
+    height: 38vw;
+    width: 38vw;
+    border-radius: 38vw;
+}
+
+.main__div--presentation{
+    width: 90vw;
+    background-color: var(--complementaryColor);
+    border-radius: 1rem;
+
+}
+
+.main__div--profileContainerDesktop {
+    position: relative;
+    top:-7rem;
+    left: 1.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 10vw;
+    height: 10vw;
+    background-color: var(--secondaryColor);
+    border-radius: 40vw;
+}
+.main__img--profilePictureDesktop {
+    height: 9vw;
+    width: 9vw;
+    border-radius: 9vw;
+}
+
+.main__div--sections {
+    margin-top: 2rem;
+}
+
+.main__div--section {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: .5rem;
+    width: 80vw;
+    height: 5rem;
     background-color: var(--backgroundColor);
+    margin: .8rem;
+    border-radius: .8rem;
+    font-size: 1.8rem;
+    font-weight: bold;
 }
 
 .footer {
@@ -46,10 +128,40 @@ background-image: linear-gradient(var(--primaryColor),black);
     flex-direction: row;
     flex-wrap: nowrap;
     justify-content: space-evenly;
+    align-items: center;
     padding: .3rem;
 }
 
 .footer__img {
-    height: 4.5rem;
-    width: 4.5rem;
+    height: 4rem;
+    width: 4rem;
 }
+
+
+/* 
+@media screen and (min-width: 600px) {
+    .body {
+        background-image: none;
+        background-color: var(--backgroundColor);
+
+    }
+
+    .header {
+        height: 35vh;
+        background-image: linear-gradient(var(--primaryColor), var(--primaryColor), var(--backgroundColor));
+    }
+
+    .main{
+        top: -7rem;
+    }
+    .main__div--profileContainer,.main__h1, .main__div--sections, .main__p--name, .footer {
+        display: none;
+    }
+    .navbar{
+        display: block;
+        height: 5rem;
+        font-size: 2.5rem;
+    }
+
+    
+} */

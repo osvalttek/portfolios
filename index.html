@@ -6,14 +6,53 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cesar Castro</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
     <link rel="stylesheet" href="./styles/style.css">
 
 </head>
 
 <body class="body">
+    <header class="header">
+        <nav class="navbar navbar-expand-lg bg-light">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="#">Navbar</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav">
+                  <a class="nav-link active" aria-current="page" href="#">Home</a>
+                  <a class="nav-link" href="#">Features</a>
+                  <a class="nav-link" href="#">Pricing</a>
+                  <a class="nav-link disabled">Disabled</a>
+                </div>
+              </div>
+            </div>
+          </nav>
+    </header>
+    <main class="main">
+        <!-- Mobile -->
+        <h1 class="main__h1">Software Developper</h1>
+        <div class="main__div--profileContainer">
+            <img src="./images/FotoPerfil.jpg" alt="foto Perfil" class="main__img--profilePicture">
+        </div>
+        <p class="main__p--name">Ing. César Jesús Castro Pérez</p>
+        <div class="main__div--sections">
+            <div class="main__div--section">Acerca de mi</div>
+            <div class="main__div--section">Experiencia</div>
+            <div class="main__div--section">Estudios </div>
+            <div class="main__div--section">Proyectos</div>
+            <!-- <div class="main__div--section"></div> -->
+        </div>
 
-    <header class="header"></header>
-    <main class="main">main</main>
+        <!-- Desktop -->
+        <div class="main__div--presentation">
+            
+            <div class="main__div--profileContainerDesktop">
+                <img src="./images/FotoPerfil.jpg" alt="foto Perfil" class="main__img--profilePictureDesktop">
+            </div>
+        </div>
+    </main>
     <footer class=" footer">
         <div class="footer__div--Contact">
             <img src="./images/email.png" alt="correo" class="footer__img">
