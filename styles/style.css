@@ -1,1 +1,55 @@
 /* Prueba */
+:root {
+    --primaryColor: dodgerBlue;
+    --secondaryColor: rgb(31, 31, 32);
+    --backgroundColor: rgb(243, 243, 246);
+    --complementaryColor: rgb(214, 214, 214);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    min-height: 100vh;
+    width: 100vw;
+}
+
+.body {
+background-image: linear-gradient(var(--primaryColor),black);
+}
+
+.header{
+    height: 10vh;
+}
+.main {
+    background-color: var(--backgroundColor);
+}
+
+.footer {
+    position: fixed;
+    bottom: 0px;
+    width: 100vw;
+    height: 5rem;
+    background-color: var(--secondaryColor);
+
+}
+
+.footer__div--Contact {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+    padding: .3rem;
+}
+
+.footer__img {
+    height: 4.5rem;
+    width: 4.5rem;
+}
