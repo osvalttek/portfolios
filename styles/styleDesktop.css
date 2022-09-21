@@ -1,0 +1,11 @@
+@media screen and (min-width: 480px) {
+    body{
+        background-color: aqua;
+    }
+    .nav__a{
+        display: inline-block;
+    }
+    .nav__h2{
+        display:none
+    }
+}
