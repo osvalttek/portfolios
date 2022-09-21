@@ -29,16 +29,14 @@ body {
     height: 10vh;
 }
 
-.navbar{
-    display: none;
-}
 .main {
     position: relative;
     display: flex;
     flex-direction: column;
     flex-wrap: nowrap;
     align-items: center;
-    margin-bottom: 7rem;
+    flex-grow: 1;
+    margin-bottom: 5rem;
 }
 
 .main__h1 {
@@ -71,47 +69,28 @@ body {
     border-radius: 38vw;
 }
 
-.main__div--presentation{
+.main__div--presentation {
     width: 90vw;
     background-color: var(--complementaryColor);
     border-radius: 1rem;
 
 }
 
-.main__div--profileContainerDesktop {
-    position: relative;
-    top:-7rem;
-    left: 1.5rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 10vw;
-    height: 10vw;
-    background-color: var(--secondaryColor);
-    border-radius: 40vw;
-}
-.main__img--profilePictureDesktop {
-    height: 9vw;
-    width: 9vw;
-    border-radius: 9vw;
-}
 
 .main__div--sections {
     margin-top: 2rem;
 }
 
 .main__div--section {
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    padding: .5rem;
+    text-align: justify;
+    padding: 2.5rem;
     width: 80vw;
-    height: 5rem;
-    background-color: var(--backgroundColor);
+    background-color: white;
     margin: .8rem;
     border-radius: .8rem;
     font-size: 1.8rem;
     font-weight: bold;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 .footer {
@@ -137,7 +116,93 @@ body {
     width: 4rem;
 }
 
+/* Desktop */
 
+
+.main__div--presentation,
+.main__div--profileContainerDesktop {
+    display: none;
+}
+
+
+.header__nav {
+    display: none;
+    width: 100vw;
+    height: 5rem;
+    background-color: var(--secondaryColor);
+}
+
+.header__div--nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 100%;
+    width: 40%;
+    max-width: 40rem;
+}
+
+.main__div--profileContainerDesktop {
+    position: relative;
+    top: -7rem;
+    left: 1.5rem;
+    width: 15rem;
+    height: 15rem;
+    background-color: var(--secondaryColor);
+    border-radius: 15rem;
+    padding: .5rem;
+}
+
+.main__img--profilePictureDesktop {
+    height: 14rem;
+    width: 14rem;
+    border-radius: 14rem;
+}
+
+
+.header__img--nav {
+    height: 4rem;
+    width: 4rem;
+}
+
+.main__sections {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    width: 90vw;
+    margin: 0 auto;
+    margin-top: 2rem;
+}
+
+.main__section {
+    display: none;
+    min-width: 30rem;
+    min-height: 15rem;
+    margin: 1rem;
+    padding: 1rem;
+    border-radius: 1rem;
+    background-color: white;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.main__div--name {
+    position: relative;
+    /* top:-5rem; */
+    left: 2rem;
+    font-size: 2rem;
+
+
+}
+
+.main__div--aboutMe {
+    display: none;
+    margin-top: -7rem;
+    font-size: 1.5rem;
+    padding-left: 2rem;
+
+    padding-right: 2rem;
+    text-align: justify;
+}
 
 @media screen and (min-width: 600px) {
     .body {
@@ -147,21 +212,50 @@ body {
     }
 
     .header {
+
+        width: 100vw;
         height: 35vh;
         background-image: linear-gradient(var(--primaryColor), var(--primaryColor), var(--backgroundColor));
     }
 
-    .main{
+    .header__nav {
+        display: flex;
+        justify-content: flex-end;
+        flex-wrap: nowrap;
+    }
+
+    .main {
         top: -7rem;
     }
-    .main__div--profileContainer,.main__h1, .main__div--sections, .main__p--name, .footer {
+
+    .main__div--profileContainer,
+    .main__h1,
+    .main__div--sections,
+    .main__p--name,
+    .footer {
         display: none;
     }
-    .navbar{
+
+    .main__div--presentation,
+    .main__section,
+    .main__div--aboutMe {
+        display: block;
+    }
+
+    .main__div--profileContainerDesktop,
+    .main__div--name {
+        display: inline-block;
+    }
+
+    .main__sections {
+        display: flex;
+    }
+
+    .navbar {
         display: block;
         height: 5rem;
         font-size: 2.5rem;
     }
 
-    
-} 
+
+}
