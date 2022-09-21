@@ -1,0 +1,81 @@
+/* llamar a los stilos de google */
+/* @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap'); */
+
+/* nuestras variables globales */
+
+:root {
+    --font: "Roboto", sans-serif;
+  }
+  
+  /* normalizacion */
+  
+  * {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+  }
+  
+  html {
+    font-size: 62.5%;
+  }
+  /* version grid */
+  /* body {
+    display: grid;
+    grid-template-rows: 10vh auto 10vh;
+    grid-template-areas:
+      "header"
+      "main"
+      "footer";
+    min-height: 100vh;
+  }
+  
+  .header {
+  }
+  
+  .nav {
+    position: fixed;
+    width: 100vw;
+    background-color: blueviolet;
+  }
+  
+  .nav__a{
+    display: none;
+    font-size: 2rem;
+  } */
+  
+  /* version flex */
+  
+  body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+  }
+  
+  .header {
+    display: flex;
+    flex-direction: column;
+    height: 10vh;
+  }
+  
+  .nav {
+    position: fixed;
+    /* position: sticky;
+    top: 0; */
+    width: 100vw;
+    background-color: blueviolet;
+  }
+  
+  .nav__a {
+    display: none;
+    font-size: 2rem;
+  }
+  /* .header__h1{
+      margin-top: 2rem;
+  } */
+  main {
+    flex-grow: 1;
+  }
+  
+  footer {
+    height: 10vh;
+  }
