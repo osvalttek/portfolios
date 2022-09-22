@@ -1,0 +1,95 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Header from '../components/Header.astro'
+import Footer from '../components/Footer.astro'
+---
+
+<Layout title="Portfolio | Home">
+	<Header />
+	<main class="main">
+		<section class="main__section">
+			<img src="https://i.postimg.cc/kXs5gKsQ/bg-img-mobile.png" alt="bg-image" class="main__img">
+			<span class="main__img-dot1"></span>
+			<span class="main__img-dot2"></span>
+		</section>
+	</main>
+	<Footer />
+</Layout>
+
+<style>
+	.main{
+		display: flex;
+		align-items: center;
+    justify-content: center;
+	}
+	.main__section{
+		display: flex;
+		align-items: center;
+    justify-content: center;
+	}
+	.main__img{
+		width: 60%;
+		height: auto;
+		border-radius: 150px;
+	}
+	.main__img-dot1{
+		position: absolute;
+		min-width: 300px;
+		min-height: 300px;
+		border: 7px solid #E40037;
+		border-radius: 50%;
+		animation: myAnim 2s ease 0s infinite alternate-reverse both;
+	}
+	.main__img-dot2{
+		position: absolute;
+		min-width: 300px;
+		min-height: 300px;
+		border: 7px solid #E40037;
+		border-radius: 50%;
+		filter: blur(15px);
+	}
+	@keyframes myAnim {
+	0% {
+		animation-timing-function: ease-out;
+		transform: scale(1);
+		transform-origin: center center;
+	}
+
+	10% {
+		animation-timing-function: ease-in;
+		transform: scale(0.95);
+	}
+
+	17% {
+		animation-timing-function: ease-out;
+		transform: scale(0.98);
+	}
+
+	33% {
+		animation-timing-function: ease-in;
+		transform: scale(0.95);
+	}
+
+	45% {
+		animation-timing-function: ease-out;
+		transform: scale(1);
+	}
+}
+@media only screen and (min-width: 800px) {
+	.main__img{
+		width: 100%;
+		height: auto;
+		border-radius: 20rem;
+	}
+	.main__img-dot1{
+		min-width: 50rem;
+		min-height: 50rem;
+		border: 10px solid #E40037;
+	}
+	.main__img-dot2{
+		min-width: 50rem;
+		min-height: 50rem;
+		border: 10px solid #E40037;
+	}
+}
+</style>

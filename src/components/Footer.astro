@@ -1,0 +1,97 @@
+---
+const primaryColor = "#FF003E";
+const secondaryColor = "#FFFFFF";
+const opacityColor = "#A7A9BE";
+---
+<footer class="footer">
+  <section class="footer__firstS">
+    <h2 class="footer__firstS--title">Web Developer</h2>
+    <p class="footer__firstS--p">From</p>
+    <h2 class="footer__firstS--region">MEXICO</h2>
+  </section>
+
+  <section class="footer__secondS">
+      <a href="https://twitter.com/GonzaaMx" target="_blank" class="footer__links--red"><i class="fa-brands fa-twitter"></i></a>
+      <a href="https://github.com/Erick-Gonza/" target="_blank" class="footer__links--white"><i class="fa-brands fa-github"></i></a>
+      <a href="https://www.linkedin.com/in/erick-gzz/" target="_blank" class="footer__links--red"><i class="fa-brands fa-linkedin"></i></a>
+      <a href="https://www.twitch.tv/gonzamx" target="_blank" class="footer__links--white"><i class="fa-brands fa-twitch"></i></a>
+  </section>
+</footer>
+
+<style is:global define:vars={{ primaryColor, secondaryColor, opacityColor }}>
+  .footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0.5rem;
+  }
+  .footer__firstS{
+    text-align: center;
+    width: 100%;
+  }
+  .footer__firstS--title{
+    font-size: 1.8rem;
+    font-weight: 700;
+    letter-spacing: 0.2rem;
+    color: var(--secondaryColor);
+  }
+  .footer__firstS--p{
+    font-size: 1.4rem;
+    font-weight: 400;
+    letter-spacing: 0.2rem;
+    color: var(--opacityColor);
+  }
+  .footer__firstS--region{
+    font-size: 1.8rem;
+    font-weight: 700;
+    letter-spacing: 0.4rem;
+    color: var(--primaryColor);
+  }
+  .footer__secondS{
+    display: flex;
+    justify-content: center;
+    gap: 1.8rem;
+    width: 100%;
+  }
+  .footer__links--red{
+    color: var(--primaryColor);
+    font-size: 2.5rem;
+  }
+  .footer__links--white{
+    color: var(--secondaryColor);
+    font-size: 2.5rem;
+  }
+@media only screen and (min-width: 800px) {
+  .footer{
+    display: flex;
+    flex-direction: row;
+    padding: 1rem;
+  }
+  .footer__firstS{
+    text-align: center;
+  }
+  .footer__firstS--title{
+    font-size: 3rem;
+  }
+  .footer__firstS--p{
+    font-size: 2rem;
+  }
+  .footer__firstS--region{
+    font-size: 2rem;
+  }
+  .footer__secondS{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+  }
+  .footer__links--red{
+    font-size: 4.5rem;
+    margin-right: 2rem;
+  }
+  .footer__links--white{
+    font-size: 4.5rem;
+    margin-right: 2rem;
+  }
+}
+</style>

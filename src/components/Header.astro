@@ -1,0 +1,205 @@
+---
+const primaryColor = "#FF003E";
+const secondaryColor = "#FFFFFF";
+const opacityColor = "#A7A9BE";
+---
+<header>
+  <section class="header__sect">
+    <h2 class="header__title">
+      <span class="title__animation">E</span>
+      <span class="title__animation">R</span>
+      <span class="title__animation">I</span>
+      <span class="title__animation">C</span>
+      <span class="title__animation">K</span>
+      <span class="title__animation">G</span>
+      <span class="title__animation">Z</span>
+      <span class="title__animation">Z</span>
+    </h2>
+    <p class="header__subtitle">FRONTEND DEV</p>
+  </section>
+  <nav class="nav">
+    <ul class="menu">
+      <li><a class="menuItem" href="/">Home</a></li>
+      <li><a class="menuItem" href="/about">About</a></li>
+      <li><a class="menuItem" href="/projects">Projects</a></li>
+      <li><a class="menuItem" href="/contact">Contact</a></li>
+    </ul>
+    <button class="hamburger">
+      <i class="menuIcon fa-solid fa-bars fa-2x"></i>
+      <i class="closeIcon fa-solid fa-x fa-2x"></i>
+    </button>
+  </nav>
+</header>
+<script is:inline>
+  const menu = document.querySelector(".menu");
+  const menuItems = document.querySelectorAll(".menuItem");
+  const hamburger= document.querySelector(".hamburger");
+  const closeIcon= document.querySelector(".closeIcon");
+  const menuIcon = document.querySelector(".menuIcon");
+
+  closeIcon.style.display = "none";
+  function toggleMenu() {
+    if (menu.classList.contains("showMenu")) {
+      menu.classList.remove("showMenu");
+      closeIcon.style.display = "none";
+      menuIcon.style.display = "block";
+    } else {
+      menu.classList.add("showMenu");
+      closeIcon.style.display = "block";
+      menuIcon.style.display = "none";
+    }
+  }
+  hamburger.addEventListener("click", toggleMenu);
+  menuItems.forEach(
+    function(menuItem) {
+      menuItem.addEventListener("click", toggleMenu);
+    }
+  )
+</script>
+
+<style is:global define:vars={{ primaryColor, secondaryColor, opacityColor }}>
+  header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0.5rem;
+  }
+  .header__sect{
+    text-align: center;
+  }
+  .header__title{
+    font-size: 2rem;
+    font-weight: 700;
+    letter-spacing: 0.2rem;
+    margin-bottom: 0.5rem;
+    color: var(--secondaryColor);
+    /* animation: flicker 1.5s infinite alternate; */
+  }
+  @keyframes flicker {
+    0%, 18%, 22%, 25%, 53%, 57%, 100% {
+        text-shadow:
+        0 0 1px #FF003E,
+        0 0 2px #FF003E,
+        0 0 4px #FF003E,
+        0 0 8px #FF003E,
+        0 0 15px #FF003E,
+        0 0 10px #FF003E,
+        0 0 20px #FF003E,
+        0 0 40px #FF003E;
+    }
+    20%, 24%, 55% {
+        text-shadow: none;
+    }
+  }
+  .header__subtitle{
+    font-size: 2rem;
+    font-weight: 700;
+    letter-spacing: 0.2rem;
+    color: var(--secondaryColor);
+    /* animation: flicker 1.5s infinite alternate; */
+  }
+  .menuItem {
+  display: block;
+  margin: 2rem 4rem;
+  font-size: 2rem;
+  font-weight: 700;
+  letter-spacing: 0.3rem;
+  color: var(--secondaryColor);
+  text-decoration: none;
+  }
+  .menuItem:hover {
+    text-decoration: underline;
+  }
+  .hamburger {
+    position: fixed;
+    z-index: 100;
+    top: 5vh;
+    right: 2.5rem;
+    padding: 0.5rem;
+    cursor: pointer;
+    background-color: transparent;
+    border: none;
+  }
+  .closeIcon {
+    display: none;
+    color: var(--secondaryColor)
+  }
+  .menuIcon {
+    display: block;
+    color: var(--secondaryColor);
+  }
+  .menu {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    transform: translateY(-100%);
+    transition: transform 0.2s;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 99;
+    background: #000000de;
+    color: white;
+    list-style: none;
+    padding-top: 4rem;
+  }
+  .showMenu {
+    transform: translateY(0);
+  }
+  @media only screen and (min-width: 800px) {
+    header{
+    padding: 1rem;
+    margin-bottom: 1rem;
+  }
+  .header__sect{
+    text-align: center;
+  }
+  .header__title{
+    font-size: 3rem;
+  }
+  .header__subtitle{
+    font-size: 2rem;
+  }
+  .menuItem {
+    display: block;
+    margin: 2rem 4rem;
+    font-size: 2.5rem;
+  }
+  .menuItem:hover {
+    text-decoration: underline;
+  }
+  .hamburger {
+    position: fixed;
+    z-index: 100;
+    top: 5vh;
+    right: 2.5rem;
+    padding: 0.5rem;
+    cursor: pointer;
+    background-color: transparent;
+    border: none;
+  }
+  .menu {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    transform: translateX(100%);
+    transition: transform 0.3s;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 99;
+    background: #000000de;
+    color: white;
+    padding-top: 1rem;
+  }
+  .showMenu {
+    transform: translateY(0);
+  }
+}
+</style>

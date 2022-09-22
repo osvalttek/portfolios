@@ -1,0 +1,59 @@
+---
+const backgroundColor = "#0F0E17";
+const { title } = Astro.props;
+export interface Props {
+	title: string;
+}
+---
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width" />
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<meta name="generator" content={Astro.generator} />
+		<title>{title}</title>
+	</head>
+	<body>
+		<slot />
+		<script src="https://kit.fontawesome.com/3adfdb2d8b.js" crossorigin="anonymous"></script>
+	</body>
+</html>
+
+<style is:global define:vars={{ backgroundColor }}>
+	@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+	*{
+		margin: 0;
+		padding: 0;
+		box-sizing: border-box;
+	}
+	html, body{
+		font-size: 62.5%;
+		font-family: 'Poppins', sans-serif;
+		min-height: 100vh;
+		background-color: var(--backgroundColor);
+	}
+	a{
+		text-decoration: none;
+	}
+	body{
+		display: grid;
+		grid-template-columns: repeat(5, 1fr);
+  	grid-template-rows: 15vh auto 20vh;
+  	grid-template-areas:
+  	'header header header header header'
+  	'main main main main main'
+  	'footer footer footer footer footer';
+  	grid-gap: 0.5rem;
+  	padding: 0.5rem;
+	}
+	header{
+		grid-area: header;
+	}
+	main{
+		grid-area: main;
+	}
+	footer{
+		grid-area: footer;
+	}
+</style>
