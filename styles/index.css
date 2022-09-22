@@ -115,11 +115,11 @@ h1{
     border-color: var(--Color3);
     border-radius:12px;
     text-align: center;
-    text-decoration: none;
+    /* text-decoration: none; */
     display: inline-block;
     font-size: 16px;
     transition: color .3s ease-in-out, box-shadow .3s ease-in-out;
-    
+
 }
 
 .InfoHome__DownloadCV button:hover{
