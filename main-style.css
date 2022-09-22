@@ -1,0 +1,400 @@
+/* Global Styles */
+
+@import url("https://fonts.googleapis.com/css2?family=Blinker:wght@100;300;600&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body,
+main,
+section {
+  min-height: 100vh;
+  background: #dccdc6;
+  font-family: "Blinker", sans-serif;
+  scroll-behavior: smooth;
+}
+
+header,
+nav {
+  min-height: 70px;
+}
+main {
+  display: flex;
+  flex-flow: column wrap;
+}
+
+section {
+  max-width: 100%;
+  padding: 80px 0;
+}
+/* Ends Global Styles */
+
+/* Desktop */
+
+/* WELCOME */
+.first-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container.welcome-text {
+  width: 60%;
+  background-color: #e1c596;
+  text-align: center;
+}
+.welcome-text h1 {
+  font-size: 35px;
+  margin: 0;
+  padding: 9px;
+}
+
+/* Home */
+
+.second-section {
+  /*   margin-top: 80px; */
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.second-section-container {
+  display: flex;
+  width: 50%;
+  justify-content: center;
+}
+
+.phrase {
+  background: #a77376;
+  display: flex;
+  align-items: center;
+  width: 370px;
+  height: 550px;
+}
+blockquote::before {
+  content: open-quote;
+}
+blockquote::after {
+  content: close-quote;
+}
+blockquote {
+  quotes: "“" "”" "‘" "’";
+  padding: 25px;
+  text-align: center;
+  font-size: 35px;
+  margin: 0;
+}
+/* ID photo */
+.photoId {
+  background-color: #dabfa5;
+  width: 325px;
+  height: 550px;
+}
+
+img.user {
+  height: 550px;
+  position: absolute;
+  z-index: 2;
+  transform: translate(-12%, -10%);
+}
+
+/* About me */
+.third-section {
+  display: flex;
+  width: 100%;
+  align-items: center;
+}
+
+section.third-section-mobile {
+  display: none;
+}
+
+.manchas-img {
+  width: 100%;
+}
+
+.about-me {
+  display: flex;
+  width: 100%;
+}
+
+.about-text-container-desktop {
+  height: 600px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 50px;
+  /*  background: rgba(218, 190, 166, 0.6); */
+  background: rgba(210, 148, 113, 0.5);
+  filter: drop-shadow(25px 25px 10px #ababab);
+}
+
+p.about-description {
+  color: #b36051;
+  font-size: 35px;
+  padding: 40px;
+  text-align: justify;
+  margin: 0;
+}
+
+/* .fourth-section {
+  margin-top: 90px;
+} */
+
+/* .fifth-section {
+  margin-top: 90px;
+  display: flex;
+}
+ */
+
+/* skill section */
+.fifth-section {
+  background-image: url("./assets/skills_background.svg");
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.fifth-section-mobile {
+  display: none;
+}
+
+.skills-container {
+  display: flex;
+  width: 70%;
+  padding: 10px;
+  flex-flow: row wrap;
+  justify-content: center;
+  border-radius: 35px;
+  background: rgba(167, 115, 118,0.5);
+}
+
+picture.picture-skill {
+  display: flex;
+width: 260px;
+height: 194px;
+  align-items: center;
+  justify-content: center;
+  margin: 5px;
+  padding: 10px;
+  border-radius: 10px;
+}
+img.skill-item {
+  width:50%;
+  filter:drop-shadow(0.35rem 0.35rem 0.4rem rgba(0, 0, 0, 0.5));
+}
+
+img.skill-item.resize_git_logo {
+  width: 65%;
+}
+
+img.skill-item.resize_figma_logo{
+  width: 35%;
+}
+
+img.skill-item.resize_azure_logo {
+  width: 60%;
+}
+
+img.skill-item.resize_snow_logo {
+  width: 100%;
+}
+
+/* mobile view */
+@media only screen and (max-width: 768px) {
+  html,
+  body,
+  main,
+  section {
+    scroll-behavior: smooth;
+    min-height: 100vh;
+    background: #dccdc6;
+    font-family: "Blinker", sans-serif;
+  }
+
+  /* Starte WELCOME styles */
+  .first-section {
+    display: flex;
+    align-items: center;
+    /*     margin-top: 60px; */
+  }
+
+  .container.welcome-text {
+    width: 95%;
+    height: 50px;
+    background-color: #e1c596;
+    text-align: center;
+  }
+  .welcome-text h1 {
+    font-size: 35px;
+  }
+
+  /* Ends WELCOME styles  */
+
+  /* Start Home styles */
+
+  .second-section {
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    justify-content: center;
+  }
+  .second-section-container {
+    width: 100%;
+  }
+
+  .phrase {
+    background: #a77376;
+    display: flex;
+    align-items: center;
+    width: 295px;
+    height: 500px;
+  }
+  blockquote::before {
+    content: open-quote;
+  }
+  blockquote::after {
+    content: close-quote;
+  }
+  blockquote {
+    quotes: "“" "”" "‘" "’";
+    padding: 25px;
+    text-align: center;
+    font-size: 35px;
+    margin: 0;
+  }
+  /* images */
+  .photoId {
+    background-color: #dabfa5;
+    width: 295px;
+    height: 500px;
+    margin-top: 90px;
+  }
+
+  img.user {
+    height: 500px;
+    position: absolute;
+    z-index: 3;
+    /*     top: -45px;
+    right: 50px; */
+    transform: translate(-6%, -4%);
+  }
+
+  .leavs {
+    display: flex;
+    width: 100%;
+    justify-content: end;
+    margin-top: -140px;
+    z-index: 4;
+  }
+
+  /* Ends Home Styles */
+
+  /* Start about me styles */
+  section.third-section {
+    display: none;
+  }
+  section.third-section-mobile {
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    /*     width: 100%; */
+    /*     margin-top: 90px; */
+  }
+
+  section.third-section-mobile {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  /*   .manchas-img-mobile {
+    width: 100%;
+  } */
+
+  .ramita-mobile {
+    width: 100%;
+  }
+
+  div.about-me-mobile {
+    display: flex;
+    width: 10%;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .about-text-container-mobile {
+    height: 450px;
+    background: rgba(218, 190, 166, 0.6);
+    position: absolute;
+    z-index: 2;
+    top: 2370px;
+    padding: 25px;
+    display: flex;
+    align-items: center;
+  }
+
+  p.about-description-mobile {
+    color: #b36051;
+    font-size: 25px;
+    padding: 10px;
+    text-align: justify;
+    margin: 0;
+  }
+
+  /* Timeline section */
+
+  /* Skils items */
+  .fifth-section {
+    display: none;
+  }
+  .fifth-section-mobile {
+    background-image: url("./assets/skills_background_mobile.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .skills-container-mobile {
+    display: flex;
+    flex-flow: row wrap;
+    padding: 10px;
+    margin: 0 25px;
+    justify-content: space-evenly;
+    background: rgba(167, 115, 118,0.5);
+  }
+
+  picture.picture-skill-mobile {
+    display: flex;
+    width: 140px;
+    height: 194px;
+      align-items: center;
+      justify-content: center;
+      margin: 5px;
+      padding: 10px;
+      border-radius: 10px;
+  }
+
+  img.skill-item-mobile {
+    width: 70%;
+    padding: 5px;
+    filter:drop-shadow(0.35rem 0.35rem 0.4rem rgba(0, 0, 0, 0.5));
+  }
+  img.skill-item-mobile.resize_git_logo_mobile {
+    width: 70%;
+  }
+
+  img.skill-item-mobile.resize_azure_logo_mobile {
+    width: 60%;
+  }
+
+  img.skill-item-mobile.resize_snow_logo_mobile {
+    width: 100%;
+  }
+}
