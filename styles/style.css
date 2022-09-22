@@ -71,27 +71,20 @@ body {
 
 .main__div--presentation {
     width: 90vw;
-    background-color: var(--complementaryColor);
+    /* background-color: var(--complementaryColor); */
+    background-color: white;
     border-radius: 1rem;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 
 }
 
 
-.main__div--sections {
+
+.main__sections {
     margin-top: 2rem;
 }
 
-.main__div--section {
-    text-align: justify;
-    padding: 2.5rem;
-    width: 80vw;
-    background-color: white;
-    margin: .8rem;
-    border-radius: .8rem;
-    font-size: 1.8rem;
-    font-weight: bold;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-}
+
 
 .footer {
     position: fixed;
@@ -163,25 +156,26 @@ body {
     height: 4rem;
     width: 4rem;
 }
-
-.main__sections {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-    width: 90vw;
-    margin: 0 auto;
-    margin-top: 2rem;
-}
-
-.main__section {
-    display: none;
-    min-width: 30rem;
-    min-height: 15rem;
-    margin: 1rem;
-    padding: 1rem;
-    border-radius: 1rem;
+.main__section--aboutMe{
+    text-align: justify;
+    padding: 2.5rem;
+    width: 80vw;
     background-color: white;
+    margin: .8rem;
+    border-radius: .8rem;
+    font-size: 1.8rem;
+    font-weight: bold;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.main__section {
+    text-align: justify;
+    padding: 2.5rem;
+    width: 80vw;
+    background-color: white;
+    margin: .8rem;
+    border-radius: .8rem;
+    font-size: 1.8rem;
+    font-weight: bold;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
@@ -232,12 +226,24 @@ body {
     .main__h1,
     .main__div--sections,
     .main__p--name,
+    .main__section--aboutMe,
     .footer {
         display: none;
     }
 
+    .main__section {
+        width:auto;
+        min-width: 30rem;
+        min-height: 15rem;
+        margin: 1rem;
+        padding: 1rem;
+        border-radius: 1rem;
+        background-color: white;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+    }
+
     .main__div--presentation,
-    .main__section,
     .main__div--aboutMe {
         display: block;
     }
@@ -249,7 +255,14 @@ body {
 
     .main__sections {
         display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        width: 90vw;
+        margin: 0 auto;
+        margin-top: 2rem;
     }
+
 
     .navbar {
         display: block;
