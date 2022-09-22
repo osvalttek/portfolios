@@ -1,0 +1,374 @@
+@import url('https://fonts.googleapis.com/css2?family=Prompt:wght@300&display=swap');
+
+:root {
+    --fontPrincipal: #7289da;
+    --white: #ffffff;
+    --grisClaro: #99aab5;
+    --navbarColor: #2c2f33;
+    --backgroundColor: #23272a;
+}
+
+ * {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Prompt', sans-serif;
+}
+h1  { font-size: 3.5em; }
+h2  { font-size: 2em;   }
+h3  { font-size: 1.3em; }
+p   { font-size: 0.9em; }
+ul  { list-style: none; }
+li  { font-size: 0.9em; }
+
+.container {
+    max-width: 1400px;
+    margin: auto;
+}
+
+header {
+    background-color: var(--navbarColor);
+    padding: 20px;
+}
+
+#navbar li{
+    display: inline;
+    padding: 25px 20px;
+}
+
+header .container {
+    display: flex;
+    justify-content: center;
+}
+
+#navbar {
+    display: flex;
+    margin: 0 auto;
+}
+
+.nav__menu {
+    display: grid;
+    grid-auto-flow: column;
+    
+}
+
+.nav__item {
+    color: var(--white);
+    text-decoration: none;
+    --clippy: polygon(0 0, 0 0, 0 100%, 0% 100%);
+}
+
+.nav__item::after {
+    content: "";
+    display: block;
+    background-color: var(--grisClaro);
+    width: 90%;
+    margin-top: 3px;
+    height: 3px;
+    clip-path: var(--clippy);
+    transition: clip-path .5s;
+}
+
+.nav__item:hover{
+    --clippy:polygon(0 0, 100% 0, 100% 100%, 0 100%);
+}
+
+.nav__label, .nav__input {
+    display: none;
+}
+
+
+
+/*
+body {
+    background-color: var(--backgroundColor);
+}
+h2{
+    color: var(--fontPrincipal);
+}
+
+
+
+
+header{
+    position: sticky;
+    top: 0;
+    opacity: 0.98;
+}
+#navbar ul {
+    font-size: 30px;
+    list-style-type: none;
+    text-align: center;
+    background-color: var(--navbarColor);
+    padding: 12px;
+}
+#navbar li{
+    display: inline;
+    text-align: center;
+    margin: 0 10px 0 0;
+}
+#navbar li a{
+    color: var(--white);
+    padding-inline: 47px;
+}
+
+
+
+
+
+
+
+#profile img{
+    margin: 20px auto;
+	display:block;
+    width: 325px;
+}
+.title h1{
+    color: var(--fontPrincipal);
+    font-size: 60px;
+    text-align: center;
+}
+.title2 h2 {
+    color: var(--fontPrincipal);
+    font-size: 30px;
+    text-align: center;
+}
+.social-media {
+    display: flex;
+    justify-content: space-evenly;
+    padding-inline: 360px;
+    padding-top: 60px;
+}
+.social-media .github:hover{
+    opacity: 0.5;
+    transition: width 2s, height 2s, transform 1s;
+    transform: rotate(360deg);
+}
+.social-media .linkedin:hover{
+    opacity: 0.5;
+    transition: width 2s, height 2s, transform 1s;
+    transform: rotate(360deg);
+}
+.social-media .facebook:hover{
+    opacity: 0.5;
+    transition: width 2s, height 2s, transform 1s;
+    transform: rotate(360deg);
+}
+.social-media .twitter:hover{
+    opacity: 0.5;
+    transition: width 2s, height 2s, transform 1s;
+    transform: rotate(360deg);
+}
+.social-media .instagram:hover{
+    opacity: 0.5;
+    transition: width 2s, height 2s, transform 1s;
+    transform: rotate(360deg);
+}
+.lineaUno {
+    border-top: 1px solid white;
+    height: 1px;
+    width: 100vw;
+    padding: 0;
+    margin: 35px auto 0 auto;
+    background-color: var(--white);
+}
+
+
+
+
+
+
+
+
+
+.proyectos h2{
+    font-size: 60px;
+    padding: 45px 160px ;
+}
+.lineaDos h3{
+    color: var(--white);
+    font-size: 25px;
+    padding-left: 200px;
+}
+.portfolioImage{
+    text-align: center;
+    padding-top: 30px;
+}
+.portfolioImage img{
+    border-radius: 8px;
+    box-shadow: 0 0 0 8px var(--fontPrincipal);
+    width: 950px;
+}
+.lineaTres h3{
+    color: var(--white);
+    font-size: 25px;
+    padding-left: 200px;
+    padding-top: 80px;
+}
+.signInDiscord {
+    text-align: center;
+    padding-top: 30px;
+}
+.signInDiscord img {
+    border-radius: 8px;
+    box-shadow: 0 0 0 8px var(--fontPrincipal);
+    width: 950px;
+}
+.lineaCuatro{
+    color: var(--white);
+    font-size: 25px;
+    padding-left: 200px;
+    padding-top: 80px;
+}
+.smashBan{
+    text-align: center;
+    padding-top: 30px;
+}
+.smashBan img{
+    border-radius: 8px;
+    box-shadow: 0 0 0 8px var(--fontPrincipal);
+    width: 950px;
+}
+.lineaCinco {
+    border-top: 1px solid white;
+    height: 1px;
+    max-width: 1200px;
+    padding: 0;
+    margin: 60px auto 0 auto;
+    background-color: var(--white);
+}
+.lineaSeis h2{
+    font-size: 60px;
+    padding: 45px 160px ;
+}
+
+
+
+
+
+
+
+.about-me div p{
+    color: var(--white);
+    font-size: 20px;
+    padding-left: 200px;
+    padding-top: 30px;
+    padding-right: 200px;
+    text-align: justify;
+}
+.sobreMiTexto{
+    padding-right: 500px;
+}
+
+.imagenes-cursos .fime{
+    width: 380px; 
+    height: 146px;    
+}
+.imagenes-cursos .platzi{
+    width: 381px;
+    height: 137px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.imagenes-cursos .udemy{
+    width: 120px;
+    height: 87px;
+    margin-left: 140px;
+}
+.imagenes-cursos{
+    position: absolute;
+    margin-left: 900px;
+    margin-top: -464px;
+}
+
+
+
+
+
+
+
+.contacto h2{
+    font-size: 60px;
+    padding: 45px 160px ;
+}
+.formulario{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.formulario form{
+    width: 600px;
+    display: flex;
+    flex-direction: column;
+}
+.emailLabel{
+    color: var(--fontPrincipal);
+}
+#email{
+    width: 600px;
+    height: 50px;
+    border-radius: 8px;
+    border-color: var(--navbarColor);
+    background-color: var(--navbarColor);
+    color: var(--white);
+}
+.mensajeLabel{
+    color: var(--fontPrincipal);
+}
+.mensaje{
+    width: 600px;
+    resize: none;
+    border-radius: 8px;
+    border-color: var(--navbarColor);
+    background-color: var(--navbarColor);
+    color: var(--white);
+    
+}
+.submit{
+    width: 100px;
+    height: 30px;
+}
+.menu-icon img{
+    width: 30px;
+    height: 30px;
+    border-radius: 2px;
+}
+.menu-icon, #check{
+    display: none;
+} */
+
+
+/**************MOBILE************************/
+
+  /*cambiar width de px a vw o %
+  375 px width
+  
+  */
+
+
+      /* .checkbtn{
+        display: block;
+    }
+    .menu-icon{
+        display: block;
+        position: fixed;
+        top: 20px;
+        right: 20px;
+    }
+    .nav-menu ul{
+        display: block;
+        position: fixed;
+        top: 70px;
+        left: -100%;
+        background-color: #222;
+        width: 100%;
+        height: 100vh;
+        right: 0;
+
+    }
+    .nav-menu ul li {
+        padding: 2rem;
+        display: flex;
+        justify-content: center;
+        margin: 0;
+    } */
