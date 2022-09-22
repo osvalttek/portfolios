@@ -119,6 +119,7 @@ h1{
     display: inline-block;
     font-size: 16px;
     transition: color .3s ease-in-out, box-shadow .3s ease-in-out;
+    
 }
 
 .InfoHome__DownloadCV button:hover{
