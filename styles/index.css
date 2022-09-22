@@ -62,6 +62,7 @@ h1{
     align-items: center;
     flex-wrap: wrap;
 }
+
 .InfoHome__Redes{
     margin-top: 1rem;
     display: flex;
@@ -74,7 +75,6 @@ h1{
 
 .InfoHome__Redes svg:hover{
     fill: var(--Color3);
-
 }
 
 #InfoHome__Row2{
@@ -88,6 +88,7 @@ h1{
     font-family: var(--Fuente);
     row-gap: 4rem;
 }
+
 .InfoHome__MyInfo{
     display: flex;
     flex-direction: column;
@@ -117,11 +118,13 @@ h1{
     text-decoration: none;
     display: inline-block;
     font-size: 16px;
+    transition: color .3s ease-in-out, box-shadow .3s ease-in-out;
 }
 
 .InfoHome__DownloadCV button:hover{
-    background-color: var(--Color3);
+    /* background-color: var(--Color3); */
     border-color: transparent;
+    box-shadow: inset 200px 0 0 0 var(--Color5);
 }
 
 
