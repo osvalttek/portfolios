@@ -7,7 +7,6 @@ _Hola! Este es mi proyecto de portafolio web, aún está en fase beta, todo pued
 
 _url de la página._
 
-Mira **Deployment** para conocer como desplegar el proyecto.
 
 
 ## Autores ✒️
