@@ -3,7 +3,11 @@
 _Hola! Este es mi proyecto de portafolio web, aún está en fase beta, todo puede mejorarse :)_
 
 
-## Este es mi alojamiento... temporalmente, chamaco! 🚀
+## Este fue mi prototipo en figma, cambió un poco en el proceso.. 😅
+_[Figma](https://www.figma.com/file/NxUG9ko9Uv5AOfrSP62jSs/Untitled?node-id=0%3A1)_
+
+
+## Y este es mi maquetado "final", puedes verlo en mi alojamiento... temporalmente, chamaco! 🚀
 
 _[Site](https://antonio-cerezo-dev.netlify.app)._
 
