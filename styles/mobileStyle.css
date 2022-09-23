@@ -15,6 +15,7 @@
 
 html {
     font-size: 16px;
+    color: var(--white);
 }
 
 header {
@@ -37,17 +38,43 @@ header {
     height: 6rem;
 }
 
+#sidebar {
+    position: fixed;
+    z-index: 1;
+    width: 30vw;
+    height: 100vh;
+    right: -200px;
+    background-color: var(--graybrown);
+}
 
-/* .imageMenu {
-    display: flex;
-    align-items: flex-end;
-    justify-content: center;
-    flex-wrap: wrap;
-    height: 2rem;
-    width: 2rem;
-} */
+#sidebar.active {
+    left: 0;
+}
 
-#imgmenu {
+#sidebar ul li {
+    text-align: center;
+    padding: 1.5rem 1rem;
+    border-bottom: 1rem solid rgba(100, 100, 100, .3);
+}
+
+#sidebar .toogle-btn {
+    position: fixed;
+    top: 7vh;
+    right: 31vw;
+    cursor: pointer;
+}
+
+#sidebar .toogle-btn span {
+    display: block;
+    width: 40px;
+    text-align: center;
+}
+
+#imgmenu,
+#proyec,
+#Home,
+#like,
+#contact {
     height: 2rem;
     width: 2rem;
     object-fit: contain;
@@ -108,6 +135,24 @@ main {
     background-image: url(../images/pp.jpg);
     background-size: cover;
     border-radius: 50%;
+}
+
+.presentacion {
+    position: fixed;
+    height: 10rem;
+    width: 100vw;
+    margin-top: 18rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+#press {
+    height: 100%;
+    width: 75%;
+    object-fit: contain;
+    align-items: center;
 }
 
 footer {
