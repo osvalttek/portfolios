@@ -30,7 +30,7 @@ body {
 	color: var(--titleColor);
 }
 
-.sutitle {
+.subtitle {
 	margin: 0.5rem;
 	font-size: var(--sizeSubtitle);
 	color: var(--titleColor);
@@ -39,10 +39,10 @@ body {
 .content {
     margin: 0.5rem 0 2rem;
 	font-size: var(--sizeContentM);
-	font-family: var(--txtColor);
+	color: var(--txtColor);
 }
 
 
 .errorImg {
-    width: 70%;
+    width: 40%;
 }
