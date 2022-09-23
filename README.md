@@ -3,9 +3,9 @@
 _Hola! Este es mi proyecto de portafolio web, aún está en fase beta, todo puede mejorarse :)_
 
 
-## Este es mi alojamiento... si tuviera uno! 🚀
+## Este es mi alojamiento... temporalmente, chamaco! 🚀
 
-_url de la página._
+_[Site](https://antonio-cerezo-dev.netlify.app)._
 
 
 
