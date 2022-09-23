@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zapateria</title>
+    <link rel="stylesheet" href="./styles/styles.css">
+</head>
+<body>
+    <header>
+        <h1>Zapateria "El gran Zapato"</h1>
+    </header>
+    <main>
+        <h2>Catalogo</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Modelo</th>
+                    <th>Tipo</th>
+                    <th>Talla</th>
+                    <th>Color</th>
+                </tr>
+            </thead>
+<tbody>
+<tr>
+    <td>
+        <h5>1</h5>
+    </td>
+    <td>
+        <img style="width: 128px; height: 128px" src="https://img.macson.es/fotos/632234_1_l.jpg" alt="">
+    </td>
+    <td>
+        <ul>
+            <ul>3</ul>
+            <ul>4</ul>
+            <ul>5</ul>
+            <ul>6</ul>
+        </ul>
+    </td>
+    <td>
+        <ul>
+            <ul>blanco</ul>
+            <ul>negro</ul>
+            <ul>cafe</ul>
+        </ul>
+    </td>
+</tr>
+<tr>
+    <td>
+        <h4>2</h4>
+    </td>
+    <td>
+        <img style="width: 128px; height: 128px" src="./assests/proxy.jpg" alt="">
+    </td>
+    <td>
+        <ul>
+            <ul>3</ul>
+            <ul>4</ul>
+            <ul>5</ul>
+            <ul>6</ul>
+        </ul>
+    </td>
+    <td>
+        <ul>
+            <ul>blanco</ul>
+            <ul>negro</ul>
+            <ul>cafe</ul>
+        </ul>
+    </td>
+</tr>
+<tr>
+    <td>
+        <h5>3</h5>
+    </td>
+    <td>
+        <img style="width: 128px; height: 128px" src="./assests/proxy (1).jpg" alt="">
+    </td>
+    <td>
+        <ul>
+            <ul>3</ul>
+            <ul>4</ul>
+            <ul>5</ul>
+            <ul>6</ul>
+        </ul>
+    </td>
+    <td>
+        <ul>
+            <ul>blanco</ul>
+            <ul>negro</ul>
+            <ul>cafe</ul>
+        </ul>
+    </td>
+</tr>
+</tbody>
+<tfoot>
+    <tr>
+        <td>Proximamente</td>
+    </tr>
+</tfoot>
+        </table>
+        <h2>Pedido</h2>
+        <form action="./pages/form.html" method="get">
+        <h4>Datos</h4>
+        <label for="nombre">Nombre</label>
+    <input type="text" id="nombre" name="nombre" required>
+    <br/>
+    <label>
+        Edad
+    <input type="number" name="edad" min="1" required>
+    </label>
+    <br>
+    <label for="text">Direccion </label required>
+    <input type="text" id="direccion" name="direccion">
+    <br/>
+    <h4>Modelo</h4>
+    <label for="modelo"></label>
+    <select name="modelo" id="modelo" multiple required>
+<option value="uno">1</option>
+<option value="dos">2</option>
+<option value="tres">3</option>
+</select>
+    <br/>
+    <label for="color">Color</label>
+        <input list="color" name="color" required />
+        <datalist id="color">
+          <option value="blanco"></option>
+          <option value="negro"></option>
+          <option value="cafe"></option>
+     </datalist>
+        <br/>
+    <label for="talla">Talla</label>
+        <input list="talla" name="talla" required />
+        <datalist id="talla">
+          <option value="3"></option>
+          <option value="4"></option>
+          <option value="5"></option>
+          <option value="6"></option>
+        </datalist>
+        <br/>
+        <input type="submit" value="enviar" />
+    </form>
+    </main>
+    <footer>
+
+        <marquee>Gracias por su preferencia</marquee>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,42 @@
+header{
+    color: blue;
+}
+h1{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 2cm;
+}
+h2{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 1cm;
+}
+h3{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1cm;
+}
+body{
+background-color: blanchedalmond; 
+height: 10px;
+text-align: center;
+}
+
+main{
+    min-height: 80vh;
+}
+table{
+    background-color: rosybrown;
+    margin: 0 auto;
+	border-collapse: collapse;
+}
+td {
+    border: 1px solid black;
+}
+
+form{
+    background-color: rosybrown;
+}
+footer{
+    background-color:blanchedalmond;
+    height: 10vh;
+    font-size: 2cm;
+    font-family: fantasy;
+}
