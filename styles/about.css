@@ -32,48 +32,29 @@ body {
     "footer footer footer footer footer";
 }
 
-/*---------- HEADER ----------*/
+/*---------- HEADER  ----------*/
 header {
   grid-area: header;
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 0.5rem;
+  padding: 1rem;
 }
 .header__sect {
   text-align: center;
 }
 .header__title {
-  font-size: 2rem;
+  font-size: 2.5rem;
   font-weight: 700;
   letter-spacing: 0.2rem;
-  margin-bottom: 0.5rem;
+  margin-bottom: 1rem;
   color: var(--secondaryColor);
-}
-@keyframes flicker {
-  0%,
-  18%,
-  22%,
-  25%,
-  53%,
-  57%,
-  100% {
-    text-shadow: 0 0 1px #ff003e, 0 0 2px #ff003e, 0 0 4px #ff003e,
-      0 0 8px #ff003e, 0 0 15px #ff003e, 0 0 10px #ff003e, 0 0 20px #ff003e,
-      0 0 40px #ff003e;
-  }
-  20%,
-  24%,
-  55% {
-    text-shadow: none;
-  }
 }
 .header__subtitle {
-  font-size: 2rem;
+  font-size: 1.8rem;
   font-weight: 700;
   letter-spacing: 0.2rem;
-  color: var(--secondaryColor);
-  /* animation: flicker 1.5s infinite alternate; */
+  color: var(--primaryColor);
 }
 .menuItem {
   display: block;
@@ -119,51 +100,51 @@ header {
   bottom: 0;
   z-index: 99;
   background: #000000de;
-  color: white;
+  color: var(--secondaryColor);
   list-style: none;
   padding-top: 4rem;
 }
 .showMenu {
   transform: translateY(0);
 }
-
 /*---------- MAIN ----------*/
 .main {
   grid-area: main;
   display: flex;
   flex-direction: column;
-  padding: 0.5rem;
+  padding: 1rem;
 }
 .main__section {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-top: 1rem;
-  padding: 0.5rem;
+  margin-bottom: 1rem;
+  padding: 1rem;
 }
 .main__sectionTitle {
   text-align: center;
-  font-size: 2.8rem;
+  font-size: 3rem;
   font-weight: 700;
-  color: #e40037;
+  color: var(--primaryColor);
 }
 .main__sectionParag {
   text-align: center;
-  color: #fffffe;
+  color: var(--secondaryColor);
   font-size: 1.6rem;
+  line-height: 1.5;
   padding: 1rem;
-  margin-bottom: 0.5rem;
+  margin-bottom: 1rem;
 }
 .main__sectionBtn {
-  padding: 0.7rem;
+  padding: 1rem;
   margin-bottom: 1rem;
   border: none;
   border-radius: 1rem;
-  width: 30%;
-  font-size: 1.4rem;
+  width: 40%;
+  font-size: 1.6rem;
   font-weight: 700;
-  background-color: #e40037;
-  color: #fffffe;
+  background-color: var(--primaryColor);
+  color: var(--secondaryColor);
   box-shadow: 0px 0px 3px 3px rgba(138, 1, 1, 0.757);
   cursor: pointer;
 }
@@ -173,35 +154,36 @@ header {
   flex-wrap: wrap;
   justify-content: center;
   gap: 1rem;
-  margin-bottom: 1rem;
-  margin-top: 1rem;
+  margin: 2rem 0rem;
 }
 .main__sectionIcon {
   width: 7.5rem;
 }
 
-/*---------- FOOTER----------*/
+/*---------- FOOTER  ----------*/
 .footer {
   grid-area: footer;
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 0.5rem;
+  padding: 1rem;
 }
 .footer__firstS {
   text-align: center;
   width: 100%;
 }
 .footer__firstS--title {
-  font-size: 1.8rem;
+  font-size: 2rem;
   font-weight: 700;
   letter-spacing: 0.2rem;
   color: var(--secondaryColor);
+  margin-bottom: 0.5rem;
 }
 .footer__firstS--p {
-  font-size: 1.4rem;
+  font-size: 1.6rem;
   font-weight: 400;
   letter-spacing: 0.2rem;
+  margin-bottom: 0.5rem;
   color: var(--opacityColor);
 }
 .footer__firstS--region {
@@ -213,67 +195,40 @@ header {
 .footer__secondS {
   display: flex;
   justify-content: center;
-  gap: 1.8rem;
+  align-items: center;
+  gap: 2.5rem;
   width: 100%;
+  padding: 1rem;
 }
 .footer__links--red {
   color: var(--primaryColor);
-  font-size: 2.5rem;
+  font-size: 2.8rem;
+  cursor: pointer;
 }
 .footer__links--white {
   color: var(--secondaryColor);
-  font-size: 2.5rem;
+  font-size: 2.8rem;
+  cursor: pointer;
 }
 
-/*---------- HEADER ----------*/
+/*---------- HEADER  ----------*/
 @media only screen and (min-width: 800px) {
   header {
-    padding: 1rem;
     margin-bottom: 1rem;
   }
-  .header__sect {
-    text-align: center;
-  }
   .header__title {
-    font-size: 3rem;
+    font-size: 3.5rem;
   }
   .header__subtitle {
-    font-size: 2rem;
-  }
-  .menuItem {
-    display: block;
-    margin: 2rem 4rem;
     font-size: 2.5rem;
   }
-  .menuItem:hover {
-    text-decoration: underline;
-  }
-  .hamburger {
-    position: fixed;
-    z-index: 100;
-    top: 5vh;
-    right: 2.5rem;
-    padding: 0.5rem;
-    cursor: pointer;
-    background-color: transparent;
-    border: none;
+  .menuItem {
+    font-size: 2.5rem;
   }
   .menu {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    position: fixed;
     transform: translateX(100%);
     transition: transform 0.3s;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    z-index: 99;
-    background: #000000de;
-    color: white;
-    padding-top: 1rem;
+    padding-top: 4rem;
   }
   .showMenu {
     transform: translateY(0);
@@ -285,14 +240,12 @@ header {
   .main {
     flex-direction: row;
     align-items: center;
-    padding: 1rem;
+    padding: 2rem;
   }
   .main__section {
-    padding: 1rem;
     width: 100%;
   }
   .main__section2 {
-    margin-top: 1rem;
     padding: 1rem;
     width: 100%;
   }
@@ -302,49 +255,46 @@ header {
   }
   .main__sectionParag {
     text-align: left;
+    font-size: 2.5rem;
+  }
+  .main__sectionBtn {
     font-size: 2rem;
   }
   .main__sectionTSkills {
-    gap: 2rem;
-    margin-bottom: 1rem;
-    margin-top: 1rem;
+    gap: 4rem;
   }
   .main__sectionIcon {
-    width: 9rem;
+    width: 10rem;
   }
 }
 
 /*---------- FOOTER ----------*/
 @media only screen and (min-width: 800px) {
   .footer {
-    display: flex;
     flex-direction: row;
-    padding: 1rem;
-  }
-  .footer__firstS {
-    text-align: center;
   }
   .footer__firstS--title {
     font-size: 3rem;
+    margin-bottom: 1rem;
   }
   .footer__firstS--p {
     font-size: 2rem;
+    margin-bottom: 1rem;
   }
   .footer__firstS--region {
     font-size: 2rem;
   }
   .footer__secondS {
-    display: flex;
-    align-items: center;
     width: 100%;
     height: 100%;
+    gap: 3rem;
   }
   .footer__links--red {
-    font-size: 4.5rem;
+    font-size: 5rem;
     margin-right: 2rem;
   }
   .footer__links--white {
-    font-size: 4.5rem;
+    font-size: 5rem;
     margin-right: 2rem;
   }
 }
