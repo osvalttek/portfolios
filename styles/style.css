@@ -21,6 +21,7 @@ body {
     width: 100vw;
 }
 
+a{text-decoration: none;}
 .body {
     background-image: linear-gradient(var(--primaryColor), black);
 }
@@ -169,7 +170,7 @@ body {
 }
 .main__section {
     text-align: justify;
-    padding: 2.5rem;
+    /* padding: 2.5rem; */
     width: 80vw;
     background-color: white;
     margin: .8rem;
@@ -177,6 +178,22 @@ body {
     font-size: 1.8rem;
     font-weight: bold;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.main__img--sectionCover{
+    /* position: absolute; */
+    width: 10rem;
+    height: 10rem;
+    object-fit: cover;
+    border-top-left-radius: 1rem;
+    margin-right:1rem
+}
+.main__img--sectionNone{
+    /* position: absolute; */
+    width: 10rem;
+    height: 10rem;
+    object-fit: none;
+    border-top-left-radius: 1rem;
+    margin-right:1rem
 }
 
 .main__div--name {
@@ -198,6 +215,43 @@ body {
     text-align: justify;
 }
 
+.main__h2{
+    font-weight: bold;
+    font-size: 2rem;
+    color: var(--primaryColor);
+}
+.main__div--form{
+
+    text-align: justify;
+    /* padding: 2.5rem; */
+    width: 80vw;
+    background-color: white;
+    margin: .8rem;
+    padding: .8rem;
+    border-radius: .8rem;
+    font-size: 1.8rem;
+    font-weight: bold;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+form > #div__email, #div__topic, #div__message{
+    display: block;
+    border: 2px solid var(--primaryColor);
+    border-radius: .5rem;
+    min-width: 80%;
+    text-align: center;
+    margin: 0 auto;
+    margin-top: .3rem;
+    margin-bottom: .5rem;
+}
+.form__input{
+    display: block;
+    background-color: var(--secondaryColor) !important;
+    color: white;
+    border-radius: .5rem;
+    padding: 0 1.3rem;
+    margin: .3rem auto;
+}
 @media screen and (min-width: 600px) {
     .body {
         background-image: none;
@@ -232,15 +286,18 @@ body {
     }
 
     .main__section {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
         width:auto;
-        min-width: 30rem;
+        min-width: 20rem;
         min-height: 15rem;
         margin: 1rem;
-        padding: 1rem;
+        padding: .5rem;
         border-radius: 1rem;
         background-color: white;
         box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-
+        font-size: 2rem;
     }
 
     .main__div--presentation,
@@ -261,6 +318,8 @@ body {
         width: 90vw;
         margin: 0 auto;
         margin-top: 2rem;
+        margin-bottom: 2rem;
+       
     }
 
 
@@ -269,6 +328,34 @@ body {
         height: 5rem;
         font-size: 2.5rem;
     }
+    .main__img--sectionCover{
+        /* position: absolute; */
+        
+        width: 100%;
+        height: 10rem;
+        object-fit: cover;
+        border-top-left-radius: 1rem;
+        border-top-right-radius: 1rem;
+        
+    }
+    .main__img--sectionNone{
+        /* position: absolute; */
+        
+        width: 100%;
+        height: 10rem;
+        object-fit: none;
+        border-top-left-radius: 1rem;
+        border-top-right-radius: 1rem;
+    }
 
+
+.main__div--form{
+
+    text-align: justify;
+    /* padding: 2.5rem; */
+    width: 90vw;
+    
+}
+    
 
 }
