@@ -46,28 +46,23 @@ background-color: var(--fondo);
 .header__div{
     margin-top: 1rem;
     display: flex;
-    flex-flow: row nowrap;
+    flex-flow: row wrap;
     justify-content: space-around;
-    align-content: flex-end;
+    align-content: center;
     color: var(--blanco);
     width: 100vw;
 }
 .nav {
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-end;
   position: relative;
   width: 100%;
 }
 
-.nav__a {
+.nav__a{
   display: none;
-  font-size: 2rem;
+  
 }
-
-/* .nav__h2{
-
-} */
-
 .main {
   width: 70vw;
   height: 100vh;
@@ -94,7 +89,7 @@ background-color: var(--fondo);
   height: 90vh;
   border-radius: 8px;
   box-shadow: 0 2px 2px var(--blanco);
-  overflow: hidden;
+  overflow-y: scroll;
   margin: 20px;
   text-align: center;
   transition: all 0.25s;
@@ -116,36 +111,11 @@ background-color: var(--fondo);
   align-items: center;
   justify-content: space-around;
 }
-.imagenApoyo{
+.imgContactoExt{
+  height: 40px;
+  width: 40px; 
+}
+.section__imgLogo{
   height: 10rem;
   width: 10rem;
 }
-/* .main__sectioncontacto{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-} */
-
-.section__divEscuela .section__divCursos {
-  display: flex;
-  align-items: baseline;
-  position: relative;
-  flex-wrap: wrap;
-}
-
-.section__imgLogo{
-  height: 15rem;
-  width: 15rem;  
-  display: inline-flex;
-  
-}
-.section__H4nombreInstitucion{
-  display: block;
-  
-}
-.section__pDescripcion{
-  display: inline;
-  height: 10rem;
-  position: absolute;
-}
-

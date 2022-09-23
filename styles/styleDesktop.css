@@ -3,10 +3,17 @@
     body{
         background-color: var(--fondo);
     }
+    .nav {
+        display: flex;
+        justify-content: space-between;
+        position: relative;
+        width: 100%;
+      }
     .nav__a{
         display: inline-block;
         color: var(--blanco);
         text-decoration: none;
+        font-size: 2rem;
     }
     .nav__h2{
         display:none
