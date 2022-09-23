@@ -248,58 +248,33 @@ header {
 
 /*---------- MAIN ----------*/
 @media only screen and (min-width: 800px) {
-  main {
-    padding: 1rem;
-    display: flex;
+  .main {
+    padding: 2rem;
+  }
+  .main__title {
+    font-size: 3rem;
+  }
+  .main__sectionProject {
     flex-direction: row;
   }
-  .form {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 100%;
-    padding: 1rem;
-    margin-bottom: 2rem;
-    border-radius: 1rem;
+  .main__sectionContent {
+    display: grid;
+    place-content: center;
   }
-  .form__title {
-    font-size: 3.5rem;
-    width: 100%;
+  .main__projectTitle {
+    font-size: 2.5rem;
   }
-  .form__label {
+  .main__projectDesc {
     font-size: 2rem;
-    width: 100%;
-    text-align: left;
-    margin-bottom: 1rem;
   }
-  .form__input {
-    width: 100%;
-    height: 4.5rem;
-    margin-bottom: 1rem;
-    padding: 1rem;
-    border-radius: 1rem;
-    border: none;
+  .main__projectTech--item {
+    font-size: 2rem;
   }
-  .form__message {
-    width: 100%;
-    height: 14rem;
-    margin-bottom: 1rem;
-    border-radius: 1rem;
+  .main__projectLinks {
+    font-size: 2.5rem;
   }
-  .form__btn {
-    padding: 1rem;
-    margin-top: 1rem;
-    font-size: 1.8rem;
-  }
-  .main__section {
-    padding: 1rem;
-    width: 100%;
-  }
-  .main__sectionMap {
-    width: 100%;
-    height: auto;
-    padding: 1rem;
-    border-radius: 2rem;
+  .main__sectionImg {
+    width: 120%;
   }
 }
 
