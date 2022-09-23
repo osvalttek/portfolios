@@ -1,5 +1,4 @@
 :root {
-    font-size: 20px;
     --background: #C19D53;
     --body: #16212C;
     --gray2: #4F4F4F;
@@ -19,9 +18,39 @@ html {
 }
 
 header {
+    position: fixed;
     display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 6rem;
+    flex-wrap: nowrap;
+}
+
+.imageCrown {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    justify-content: center;
+    width: 100vw;
+    height: 6rem;
+}
+
+
+/* .imageMenu {
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    flex-wrap: wrap;
+    height: 2rem;
+    width: 2rem;
+} */
+
+#imgmenu {
+    height: 2rem;
+    width: 2rem;
+    object-fit: contain;
 }
 
 body {
@@ -29,36 +58,22 @@ body {
     flex-direction: column;
     width: 100vw;
     height: 100vh;
-}
-
-.media {
-    /* pensado en movile */
-    display: flex;
-    align-items: center;
-    justify-content: center;
     background-color: var(--body);
-    width: 100vw;
-    height: 6rem;
-}
-
-.imageCrown {
-    width: 8rem;
-    height: 5rem;
-    /* left: 12.9rem;
-    top: 0rem; */
 }
 
 main {
-    flex-grow: 1;
-    background-color: var(--body);
+    display: flex;
     justify-content: space-between;
+    align-items: flex-start;
+    width: 100vw;
+    height: 100vh;
 }
 
 .bordeL {
     position: fixed;
     top: 0;
     left: 0;
-    height: 55rem;
+    height: 100vh;
     width: 4rem;
 }
 
@@ -66,7 +81,7 @@ main {
     position: fixed;
     top: 0;
     right: 0;
-    height: 55rem;
+    height: 100vh;
     width: 4rem;
 }
 
@@ -77,16 +92,48 @@ main {
     object-fit: contain;
 }
 
+.foto {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 10rem;
+    margin-top: 7rem;
+    width: 10rem;
+    border: 1px;
+}
+
+#pp {
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+}
+
 footer {
-    height: 1rem;
-    background-color: var(--body);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-content: center;
+}
+
+.bonefire {
+    height: 10rem;
+    width: 100vw;
+    bottom: 0;
+}
+
+#bf {
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
 }
 
 
 /* Esto es apra cuandoe este en desktop */
 
 @media only screen and (min-width: 750px) {
-    .media {
+    .imageCrown {
         display: none;
     }
     .BorderL,
