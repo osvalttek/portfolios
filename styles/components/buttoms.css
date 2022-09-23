@@ -1,0 +1,9 @@
+#btn_menu{
+    background-color: transparent !important;
+}
+
+.btn-enviar_email{
+    border-radius: 28px !important;
+    background-color: #D61C4E !important;
+    border-color: #D61C4E !important;
+}

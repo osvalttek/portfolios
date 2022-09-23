@@ -9,3 +9,61 @@
     padding: 20px;
     display: flex;
 }
+
+
+.cont_cards{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+.card_categorias{
+    display: flex;
+    flex-direction: column;
+    background-color: #293462;
+    color: white;
+    border-radius: 20px;
+    padding: 24px 40px;
+    gap: 0px;
+    font-size: 13px;
+}
+
+.cont_contacto{
+    display: flex;
+    flex-direction: column;
+    text-align: start;
+    width: 80vw;
+    margin: 10px 20px;
+    gap: 10px;
+}
+
+.cont_contacto iframe{
+    width: 100%;
+    height: 270px;
+}
+
+.section_general{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background-color: #383b48;
+    color: white;
+    padding: 35px 0px;
+}
+
+
+.cont_form_email form{
+    display: flex;
+    flex-direction: column;
+    width: 80vw;
+    max-width: fit-content;
+    background-color: #293462;
+    color: white;
+    border-radius: 20px;
+    padding: 24px 40px;
+    gap: 10px;
+    font-size: 13px;
+    text-align: start;
+}

@@ -1,0 +1,10 @@
+input{
+    padding: 5px;
+    border-radius: 8px;
+    width: auto;
+}
+
+textarea{
+    padding: 5px;
+    border-radius: 8px;
+}

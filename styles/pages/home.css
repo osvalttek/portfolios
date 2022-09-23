@@ -1,15 +1,38 @@
-#text_principal{
-    justify-content: center;
-    font-size: 30px;
+#section_home{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     text-align: center;
+}
+
+.img_principal img{
+    width: 300px;
+    height: 140px;
+}
+
+.txt_primary{
+    font-size: 20px;
+    font-weight: 700;
+}
+.txt_secundary{
+    font-size: 15px;
+    font-weight: 700;
 }
 
 
 /*Responsive*/
-@media (max-width: 500px) {
-    #text_principal{
-        justify-content: center;
-        font-size: 30px;
-        text-align: center;
+
+@media (min-width: 900px) {
+    .img_principal img{
+        width: 700px;
+        height: 320px;
+    }
+    .txt_primary{
+        font-size: 40px;
+        font-weight: 700;
+        margin-top: -20px;
+    }
+    .txt_secundary{
+        font-size: 20px;
     }
 }

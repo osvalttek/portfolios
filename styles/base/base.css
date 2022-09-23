@@ -1,9 +1,52 @@
+:root{
+    --colorPrimary: #293462;
+    --colorSecundary: #D61C4E;
+    --colorAmarillo: #FFF80A;
+}
+
 *{
     padding: 0px;
     margin: 0px;
+    margin-bottom: 0px;
+    box-sizing: border-box;
+}
+
+button{
+    all: unset;
+}
+
+
+body{
+    display: grid;
+    min-height: 100vh;
 }
 
 header{
-    padding: 30px 0px;
-    background-color: aqua;
+    width: 100%;
+    height: fit-content;
+    background-color: var(--colorPrimary);
+}
+
+#linea_roja{
+    width: 100%;
+    height: 20px;
+    background-color: #D61C4E;
+}
+#linea_amarilla{
+    width: 100%;
+    height: 20px;
+    background-color: #FFF80A;
+}
+
+main{
+    margin-top: 70px;
+    height: fit-content;
+    margin-bottom: 30px;
+}
+
+footer{
+    display: flex;
+    justify-content: center;
+    background-color: #3D3A3A;
+    color: aliceblue;
 }

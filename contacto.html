@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="./styles/components/contents.css">
     <link rel="stylesheet" href="./styles/menu_options.css">
     <link rel="stylesheet" href="./styles/components/buttoms.css">
+    <link rel="stylesheet" href="./styles/components/inputs.css">
     <link rel="stylesheet" href="./styles/pages/home.css">
 
 
@@ -56,11 +57,33 @@
 
     <main>
         <section id="section_home">
-            <h4 class="txt_primary">UN LOBO NUNCA AÚLLA SOLO</h4>
-            <picture class="img_principal mt-3">
-                <img src="./styles/images/imagen_section1.jpg" alt="campo_de_juego">
-            </picture>
-            <p class="mt-4 txt_secundary"> Si el futbol, es tu pasion Club Lobos es el lugar ideal para ti, ven a prepararte con nosotros.</p>
+            <h4 class="txt_primary">CONTACTO</h4>
+            <div class="cont_contacto">
+                <span class=""><b>Teléfono: </b> 81 1764 3245</span>
+                <span class=""><b>Correo: </b> clublobos@gmail.com</span>
+                <span class="mb-3"><b>Dirección:  </b> Zona Clouthier, San Pedro Garza García, N.L.</span>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1797.8968448491423!2d-100.4070629950845!3d25.678132900000005!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8662970a63720983%3A0xbe21863873aff05f!2sCANCHA%20CLUB%20LOBOS!5e0!3m2!1ses-419!2smx!4v1663948326626!5m2!1ses-419!2smx" width="280" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </section>
+        <section class="section_general mt-5">
+            <h4 class="txt_primary">Mandanos un correo</h4>
+            <div class="cont_form_email mt-4">
+                <form action="https://formspree.io/f/xzbwrrzr" method="POST">
+                    <label for="nombre">Nombre</label>
+                    <input type="text" name="nombre" placeholder="Nombre" required>
+    
+                    <label for="apellido">Apellido</label>
+                    <input type="text" name="apellido" placeholder="Apellido" required>
+    
+                    <label for="correo">Correo</label>
+                    <input type="email" name="correo" placeholder="Correo" required>
+    
+                    <label for="mensaje">Mensaje</label>
+                    <textarea name="textarea" rows="4" cols="50" placeholder="Escribe el mensaje" required></textarea>
+    
+                    <button class="btn btn-primary btn-enviar_email mt-4" type="submit">Enviar</button>
+                </form>
+            </div>
         </section>
     </main>
     <footer>
