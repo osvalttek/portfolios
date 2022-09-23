@@ -1,0 +1,72 @@
+.header{
+    position: fixed;
+    top: 0;
+    padding: 0 1.3rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 4rem;
+    width: 100%;    
+    background-color: var(--backroundheader);
+}
+
+.header__logo{
+   /*  margin: 1rem; */
+    /* margin-left: 1rem; */
+    width: 3rem;
+    /* height: auto; */
+    
+}
+
+.menuCheck{
+    position: absolute;
+    opacity: 0%;
+    background-color: var(--backgroundIcon)
+}
+
+.menuIcon{
+    /* margin-right: 2rem; */
+    width: 2rem;
+    height: 2rem;
+}
+
+.navMobile{    
+    /* display: flex; para ver lo que estaba pasando*/
+    display: none;
+    position: fixed;
+    flex-direction: column;
+    justify-content: space-evenly;
+    top: 4.5rem;
+    right: 1rem;
+    width: 45vw;
+    height: 45vh;
+    background-color: var(--backgroundMenu);
+    border-radius: 1em; 
+}
+
+.navMobile__item{
+    /* margin-bottom: 0; */
+    text-align: center;
+    text-decoration: none;
+    font-size: 1.7rem;
+    color: var(--colorheader);
+    
+}
+.closeMenu{
+    /* margin-right: 2rem; */
+    /* margin-bottom: .2rem; */
+    display: none;
+    width: 2rem;
+    height: 2rem;
+    background-color: var()
+}
+
+.menuCheck:checked +.burgerMenu {
+    display: none;
+}
+.menuCheck:checked ~ .closeMenu {
+	display:flex;
+}
+.menuCheck:checked ~ .navMobile {
+	display: flex;
+}

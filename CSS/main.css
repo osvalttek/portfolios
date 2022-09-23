@@ -1,0 +1,40 @@
+
+.acerca{
+    padding: 1rem;
+    line-height: 1.5rem;
+}
+
+.acerca__pagina{
+    text-align: left;
+    padding: 1.5rem 0;
+    font-size: large;
+    text-align: center;
+}
+
+
+.acerca__retrato{
+    width: 150px;
+    height:155px;
+    border-radius:160px;
+    border: 1px solid rgb(45, 45, 45);
+}
+
+.acerca__nombre{
+    padding: 1.5rem;
+    font-size: 1.1rem;
+    font-weight: 800;
+    display: flex;
+    align-items: flex-end;
+    flex-wrap: wrap;
+    text-align: left;
+    width: 100%;
+    justify-content: space-around;
+}
+
+.acerca__nombre > p{
+    margin-top: 2rem;
+}
+
+.acerca__acercaDeMi{
+    text-align: justify;
+}
