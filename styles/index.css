@@ -581,11 +581,11 @@ h1{
     width: 100%;
     
     padding-bottom: 10rem;
-    background-color: var(--Color2);
+    background-color: var(--Color1);
 }
 
 #Contact h1{
-    color: var(--Color3);
+    color: var(--Color2);
 }
 
 
@@ -599,6 +599,7 @@ h1{
     margin: 0 auto;
     border-style: solid;
     border: none;
+    background-color: var(--Color2);
     /* border-color: var(--Color4); */
     border-radius: 15px;
     box-shadow: 2px 2px 3px 3px rgba(0, 0, 0, 0.273);
@@ -778,19 +779,19 @@ footer{
     width: 100%;
     justify-content: space-around;
     align-items: center;
-    background-color: var(--Color1);
+    background-color: var(--Color2);
 }
 
 footer #Footer__Name{
-    color: var(--Color2);
+    color: var(--Color1);
 }
 
 footer #Footer__Copyright{
-    color: var(--Color2);
+    color: var(--Color1);
 }
 footer #Footer__Redes svg:hover{
-cursor: pointer;
-fill: var(--Color3);
+    cursor: pointer;
+    fill: var(--Color3);
 }
 
 @media only screen and (max-width:400px ){
@@ -801,6 +802,125 @@ fill: var(--Color3);
         justify-content: space-around;
         align-items: center;
         flex-direction: column;
-        background-color: var(--Color1);
+    }
+}
+
+#MyServices{
+    height: auto;
+    width: 100%;
+    
+    padding-bottom: 10rem;
+    background-color: var(--Color2);
+}
+
+#MyServices h1{
+    color: var(--Color3);
+}
+#MyServices h2{
+    color: var(--Color4);
+    margin-left: 1rem;
+    padding-top: 1rem;
+}
+
+#MyServices__Services{
+    display: flex;
+    min-height: 100%;
+    width: 100%;
+    align-items: center;
+    margin: 0 auto;
+}
+
+#Services__Mobile{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    height: 350px;
+    margin-right: 2rem;
+    margin-left: 2rem;
+    padding: 1rem 0 1rem 0;
+    border-style: solid;
+    border: none;
+    /* border-color: var(--Color4); */
+    border-radius: 15px;
+    box-shadow: 2px 2px 3px 3px rgba(0, 0, 0, 0.273);
+
+}
+#Services__Mobile p,
+#Services__Mobile h3  {
+    margin: 0 auto;
+    width: 70%;
+    text-align: center;
+    margin-top: 1rem;
+}
+.Services__Icons{
+    display: flex;
+    align-items: center;
+    /* justify-content: center; */
+    justify-content: space-evenly;
+}
+
+#Services__Web{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    height: 350px;
+    padding: 1rem 0 1rem 0;
+    margin-right: 2rem;
+    margin-left: 2rem;
+    border-style: solid;
+    border: none;
+    /* border-color: var(--Color4); */
+    border-radius: 15px;
+    box-shadow: 2px 2px 3px 3px rgba(0, 0, 0, 0.273);
+}
+
+#Services__Web p,
+#Services__Web h3  {
+    color: var(--Color4);
+    margin: 0 auto;
+    width: 70%;
+    text-align: center;
+    margin-top: 1rem;
+}
+
+@media only screen and (max-width:860px ){
+    #MyServices__Services{
+        display: flex;
+        min-height: 100%;
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+        margin: 0 auto;
+        margin-top: 2rem;
+    }
+    #Services__Mobile{
+        display: flex;
+        flex-direction: column;
+        width: 90%;
+        height: auto;
+        margin-right: 4rem;
+        margin-left: 4rem;
+        padding: 1rem 0 1rem 0;
+        border-style: solid;
+        border: none;
+        /* border-color: var(--Color4); */
+        border-radius: 15px;
+        box-shadow: 2px 2px 3px 3px rgba(0, 0, 0, 0.273);
+    }
+    
+    #Services__Web{
+        display: flex;
+        flex-direction: column;
+        width: 90%;
+        height: auto;
+        padding: 1rem 0 1rem 0;
+        margin-right: 5rem;
+        margin-left: 5rem;
+        margin-top: 3rem;
+        border-style: solid;
+        border: none;
+        /* border-color: var(--Color4); */
+        border-radius: 15px;
+        box-shadow: 2px 2px 3px 3px rgba(0, 0, 0, 0.273);
     }
 }
