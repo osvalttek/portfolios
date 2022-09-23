@@ -1,0 +1,48 @@
+:root {
+	--bgColor: #001738;
+    --titleColor: #f9f9f9;
+	--txtColor: #b5b5b5;
+	--titillium: "Titillium Web", sans-serif;
+	--montserrat: "Montserrat", sans-serif;
+	--sizeTitleM: 2rem;
+	--sizeSubtitle: 1.8rem;
+	--sizeContentM: 1.6rem;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+html {
+	font-size: 62.5%;
+}
+
+body {
+    background-color: var(--bgColor);
+    font-family: var(--titillium);
+}
+
+.title {
+	margin: 0.5rem;
+	font-size: var(--sizeTitleM);
+	color: var(--titleColor);
+}
+
+.sutitle {
+	margin: 0.5rem;
+	font-size: var(--sizeSubtitle);
+	color: var(--titleColor);
+}
+
+.content {
+    margin: 0.5rem 0 2rem;
+	font-size: var(--sizeContentM);
+	font-family: var(--txtColor);
+}
+
+
+.errorImg {
+    width: 70%;
+}
