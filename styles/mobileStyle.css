@@ -1,0 +1,96 @@
+:root {
+    font-size: 20px;
+    --background: #C19D53;
+    --body: #16212C;
+    --gray2: #4F4F4F;
+    --graybrown: #2A2827;
+    --white: #FFFFFF;
+    --crown: "./images"
+}
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    font-size: 16px;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    height: 100vh;
+}
+
+.media {
+    /* pensado en movile */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--body);
+    width: 100vw;
+    height: 6rem;
+}
+
+.imageCrown {
+    width: 8rem;
+    height: 5rem;
+    /* left: 12.9rem;
+    top: 0rem; */
+}
+
+main {
+    flex-grow: 1;
+    background-color: var(--body);
+    justify-content: space-between;
+}
+
+.bordeL {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 55rem;
+    width: 4rem;
+}
+
+.bordeR {
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 55rem;
+    width: 4rem;
+}
+
+#bordeL,
+#bordeR {
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+}
+
+footer {
+    height: 1rem;
+    background-color: var(--body);
+}
+
+
+/* Esto es apra cuandoe este en desktop */
+
+@media only screen and (min-width: 750px) {
+    .media {
+        display: none;
+    }
+    .BorderL,
+    .BorderL {
+        display: none;
+    }
+}

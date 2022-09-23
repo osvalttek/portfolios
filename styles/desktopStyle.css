@@ -1,0 +1,14 @@
+:root {
+    font-size: 20px;
+    --background: #C19D53;
+    --body: #16212C;
+    --gray2: #4F4F4F;
+    --graybrown: #2A2827;
+    --white: #FFFFFF;
+}
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
