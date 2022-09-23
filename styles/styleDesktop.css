@@ -1,0 +1,14 @@
+
+@media screen and (min-width: 480px) {
+    body{
+        background-color: var(--fondo);
+    }
+    .nav__a{
+        display: inline-block;
+        color: var(--blanco);
+        text-decoration: none;
+    }
+    .nav__h2{
+        display:none
+    }
+}

@@ -1,0 +1,138 @@
+/* llamar a los stilos de google */
+/* @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap'); */
+
+/* nuestras variables globales */
+
+:root {
+  --font: "Roboto", sans-serif;
+  --fondo: #432C51; 
+  --menu: #535474;
+  --navbar: #54A4AF;
+  --hoover: #ECBC55;
+  --negro: #000000;
+  --blanco: #FFFFFF;
+}
+
+/* normalizacion */
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+background-color: var(--fondo);
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  position: relative;
+  
+}
+.agradecimiento{
+    background-color: var(--blanco);
+}
+
+.header {
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  background-color: var(--navbar);
+  width: 95vw;
+  height: 10rem;
+  align-content: space-between;
+  align-self: center;
+  top: 3%;
+  z-index: 1;
+}
+.header__div{
+    margin-top: 1rem;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+    align-content: flex-end;
+    color: var(--blanco);
+    width: 100vw;
+}
+
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  width: 100%;
+}
+
+.nav__a {
+  display: none;
+  font-size: 2rem;
+}
+
+/* .nav__h2{
+
+} */
+
+main {
+  width: 95vw;
+  height: 60vh;
+  flex-grow: 1;
+  display: flex;
+  align-items: center;
+  align-self: center;
+  flex-direction: column;
+  position: absolute;
+  padding-top: 18vh;
+  font: var(--font);
+  color: var(--blanco);
+  font-size: 18px;
+}
+
+#escolar{
+  padding-top: 18vh;
+}
+/* footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 20vh;
+  background-color: var(--navbar);
+  width: 100vw;
+  font-size: 2rem;
+  position: absolute;
+  top: 330%;
+} 
+
+.footer_nav{
+    
+    color: var(--blanco);
+    text-decoration: none;
+    
+}*/
+.main__sectioncontacto{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  
+  
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.section__divContactoExterno{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+.imagenApoyo{
+  height: 10rem;
+  width: 10rem;
+}
