@@ -1,0 +1,14 @@
+@media (min-width: 400px) {
+    .grid-container {
+      grid-template:
+        "header" 86px
+        "main" auto
+        "footer"  75px /
+        auto;
+    }
+
+    footer {
+        grid-area: footer;
+        background-color: red;
+      }
+  }

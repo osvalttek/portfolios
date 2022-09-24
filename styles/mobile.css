@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2? family=Be+Vietnam+Pro:wght@600&family=JetBrains+Mono:wght@100&family=Montserrat:wght@700&display=swap');
+:root {
+  --grisBlack: #141414;
+  --white: #ffffff;
+  --dorado:#D29601;
+  --negro: #0000;
+  --blanco: #FFFFFF;
+  --grisClaro: #A2A2A2;
+
+  --principal:'Montserrat', sans-serif;
+  --textos: 'JetBrains Mono', monoespacio;
+  --extras: 'Be Vietnam Pro', sans-serif;
+  
+  
+}
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+
+body{
+  font-family: var(--extras);
+  font-size: 1.2rem;
+  min-height: 100vh;
+  width: 100vw;
+}
+
+.grid-container {
+ display: grid;
+ grid-template: 
+  "header" 86px
+  "main" auto /
+  auto;
+}
+
+header {
+  grid-area: header;
+  position:fixed;
+  background-color: #151515;
+  header: 20vh;
+  width: 100%;
+  color: var(--dorado);
+  font-family: var(--extras);
+}
+
+header img{
+  height: 50px;
+  margin-left: 30px;
+  margin-top: 10px;
+}
+
+main {
+    min-height: 100vh;
+    grid-area: main;
+    background-color: #141414;
+}
+.home{
+  height: 100vh;
+}
+.home__presentacion{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.home__presentacion .soyAO{
+  position:static;
+  margin-top: 50px;
+  width: 370px;
+}
+.home__presentacion .flecha{
+  position: relative;
+  margin-top: 30px;
+  width: 50px;
+	-webkit-animation: movingimage linear 1s 1s infinite alternate;
+	-moz-animation: movingimage linear 1s 1s infinite alternate;
+	animation: movingimage linear 1s 1s infinite alternate;
+}
+@-webkit-keyframes movingimage{
+	0%{ opacity: 1; top:0px; }
+	25%{ opacity: 1; top: 3px; }
+	50%{ opacity: 1;  top: 8px; }
+	75%{ opacity: 1;  top:3px; }
+	100%{opacity: 1;  top: 0px;}
+}
+@-keyframes movingimage{
+	0%{ opacity: 1; top:0px; }
+	25%{ opacity: 1; top: 3px; }
+	50%{ opacity: 1; top: 8px; }
+	75%{ opacity: 1; top: 3px; }
+	100%{opacity: 1;  top: 0px;}
+}
+
+.home__presentacion__txtPrin{
+  position: absolute;
+  margin-top: 430px;
+  margin-left: 20px;
+}
+
+.home__presentacion__txtPrin h1{
+  color: var(--blanco);
+  font-family: var(--principal);
+  font-size: 39px;
+}
+
+.home__presentacion__txtPrin h2{
+  color: var(--dorado);
+  font-family: var(--textos);
+  font-size: 20px;
+}
+
+.home__presentacion__txtPrin h3{
+  color: var(--blanco);
+  font-family: var(--textos);
+  font-size: 17px;
+}
+  
+
