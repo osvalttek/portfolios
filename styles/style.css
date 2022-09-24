@@ -280,6 +280,7 @@ footer {
         position: sticky;
         top: 0;
         opacity: 0.98;
+        position: fixed;
     }
     #navbar{
         display: flex;
@@ -304,6 +305,7 @@ footer {
     #profile .div__img{
         width: 20%;
         padding-bottom: 0;
+        padding-top: 100px;
     }
     main {
         height: 100vh;
@@ -313,6 +315,31 @@ footer {
     }
     .social-media img {
         width: 100%;
+    }
+    .social-media .github:hover{
+        opacity: 0.5;
+        transition: width 2s, height 2s, transform 1s;
+        transform: rotate(360deg);
+    }
+    .social-media .linkedin:hover{
+        opacity: 0.5;
+        transition: width 2s, height 2s, transform 1s;
+        transform: rotate(360deg);
+    }
+    .social-media .facebook:hover{
+        opacity: 0.5;
+        transition: width 2s, height 2s, transform 1s;
+        transform: rotate(360deg);
+    }
+    .social-media .twitter:hover{
+        opacity: 0.5;
+        transition: width 2s, height 2s, transform 1s;
+        transform: rotate(360deg);
+    }
+    .social-media .instagram:hover{
+        opacity: 0.5;
+        transition: width 2s, height 2s, transform 1s;
+        transform: rotate(360deg);
     }
     .title h1 {
         font-size: 60px;
@@ -371,7 +398,7 @@ footer {
         display: flex;
         flex-direction: row-reverse;
         text-align: right;
-        padding: 5px 20px;
+        padding: 5px 40px;
     }
     .fimeTexto{
         display: flex;
@@ -440,7 +467,7 @@ footer {
 /*
 git add .
 git commit -m "mensaje de lo que se subio"
-git push origin claseEnLaQueEstoy
+git push nombredelRemoto nombreDeLaBranch
 */
 
 /*
