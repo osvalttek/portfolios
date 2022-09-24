@@ -1,0 +1,138 @@
+@media screen and (min-width: 768px){
+    /* HEADER */
+    
+    .header__item1_BM{
+        display: none;}
+        /* /* top:2.5vh;
+        left:3vw;
+        max-width: 2.5vh;
+        max-height: 2.5vh; */
+    
+    .header__item1_BL{
+        margin-top: 4.1%;
+        min-width: 90%;
+        left:2.5%;
+    }    
+    
+    .header__item__Sigil{
+        margin-top: 1.5%;
+        right:1%
+    }
+    
+    .header__links{
+        position: relative;
+        height: 4vh;
+        width: 100%;
+        margin-top: 4.2%;
+        /* right: 41vw;
+        top: 6.5vh; */
+    }
+    
+    .header__links_what{
+        position: absolute;
+        left:20%;
+        color: black;
+        font-family: 'Montserrat', sans-serif;
+        font-size: 150%;
+    }
+    
+    .header__links_why{
+        position: absolute;
+        left:50%;
+        color: black;
+        font-family: 'Montserrat', sans-serif;
+        font-size: 150%;
+    }
+    
+    .header__links_join{
+        position: absolute;
+        left:80%;
+        color: black;
+        font-family: 'Montserrat', sans-serif;
+        font-size: 150%;
+    }
+    
+    /* MAIN/CONTENT */
+    
+    .container{
+        top:10vh;
+        height: 70vh ;
+        width: 75vw;
+    }
+    
+    .container__image1{
+        position: absolute;
+        max-height: 63%;
+        z-index: 1;
+        left: 23vw;
+        top: 50%;
+    }
+    
+    .container__form{
+        border-style: solid;
+        position:absolute;
+        width: 60%;
+        height: 200%;
+        left: 58%;
+        top:100%;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        /* justify-content: center;
+        align-items: center; */
+        font-size: 150%;
+    }
+
+    .container__form_nameInput{
+        position: relative;
+        width: 60%;
+    }
+
+    .container__form_emailInput{
+        position: relative;
+        width: 60%;    
+    }
+
+    .container__form_messageLabel{
+        position: relative;
+        left:0%;
+    }
+
+    .container__form_messageInput{
+        position: relative;
+        width: 60%;
+        height: 10%;
+    }
+
+    .container__form_button{
+        position: relative;
+        align-self: center;
+        top: 3%;
+        width: 60%;
+    }
+
+    .container__title{
+        position: absolute;
+        font-family:'Benne', serif ;
+        font-size: 800%;
+        text-align: center;
+        left:10%;
+        z-index: 3;
+    }
+    
+    .container__text{
+        z-index: 2;
+        position: relative;
+        max-width: 30vw;
+        max-height: 10vh;
+        font-size: 200%;
+        font-family:'Montserrat', sans-serif;
+        text-align: start;
+        top: 11%;
+        
+    }
+    
+    
+    
+    }
+    

@@ -1,0 +1,137 @@
+@media screen and (min-width: 768px){
+/* HEADER */
+
+.header__item1_BM{
+    display: none;}
+    /* /* top:2.5vh;
+    left:3vw;
+    max-width: 2.5vh;
+    max-height: 2.5vh; */
+
+    .header__item1_BL{
+    margin-top: 4.1%;
+    min-width: 90%;
+    left:2.5%;
+}    
+
+.header__item__Sigil{
+    margin-top: 1.5%;
+    right:1%
+}
+
+.header__links{
+    position: relative;
+    height: 4vh;
+    width: 100%;
+    margin-top: 4.2%;
+    /* right: 41vw;
+    top: 6.5vh; */
+}
+
+.header__links_what{
+    position: absolute;
+    left:20%;
+    color: black;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 150%;
+}
+
+.header__links_why{
+    position: absolute;
+    left:50%;
+    color: black;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 150%;
+}
+
+.header__links_join{
+    position: absolute;
+    left:80%;
+    color: black;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 150%;
+}
+
+
+
+
+/* MAIN/CONTENT */
+
+.container{
+    top:10vh;
+    height: 70vh ;
+    width: 75vw;
+}
+
+.container__image1{
+    position: absolute;
+    max-height: 63%;
+    z-index: 1;
+    left: 23vw;
+    top: 50%;
+}
+
+.container__image2{
+    position: absolute;
+    max-height: 25%;
+    z-index: 1;
+    left: 30%;
+    top: 35%;
+}
+
+.container__image3{
+    position: absolute;
+    max-height: 20%;
+    z-index: 1;
+    left: 58%;
+    top: 93%;
+}
+
+.container__title{
+    position: absolute;
+    font-family:'Benne', serif ;
+    font-size: 800%;
+    text-align: center;
+    left:10%;
+    z-index: 3;
+}
+
+.container__text1{
+    z-index: 2;
+    position: relative;
+    max-width: 30vw;
+    max-height: 10vh;
+    font-size: 200%;
+    font-family:'Montserrat', sans-serif;
+    text-align: start;
+    top: 11%;
+    left: -58%;
+    
+}
+
+.container__text2{
+    z-index: 2;
+    position: absolute;
+    width: 30vw;
+    font-size: 200%;    
+    font-family:'Montserrat', sans-serif;
+    text-align: end;
+    top: 26%;
+    left:59%;
+    
+}
+
+}
+
+/* vw = 100 de la pantalla. 
+en el cambio de tamaños de pantalla cambian las proporciones de distancia 
+cambiar la medida de las imagenes a px o más específicas. 
+
+Encapsular en divs y jugar con propiedades de Flex (justify-align-etc.)
+contenedor pdre tiene que ser Relative e hijos absolutos. (checar documentación de esto)
+
+*/
+
+
+
+

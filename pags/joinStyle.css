@@ -1,0 +1,153 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+body{
+    min-height: 100vh;
+    width: 100vw;
+}
+
+/* HEADER */
+
+@media screen and (max-width: 767px){
+    .header__links{
+        display: none;
+    }
+}
+
+.header {
+    position: relative;
+    display: flex;
+    width: 100vw;
+    height: 10vh;
+    background-color: #201C1C;
+    /* display: flex; */
+    
+    
+}
+
+.header__item1_BM {
+    position: absolute;
+    margin-top: 5.5%;
+    width: 5%;
+    height: 30%;
+    left:2% ;
+    /* left: 5px;
+    transform: translate(0px, 15px); */
+}
+
+.header__item1_BL{
+    position: absolute;
+    height: .2vh;
+    width: 86%;
+    margin-top: 7.3%;
+    left: 8%
+    /* left: 7px;
+    transform: translate(0px, 22px); */
+}
+
+.header__item__Sigil{
+
+    position: absolute;
+    max-height: 70%;
+    max-width: 70%;
+    right:43%;
+    margin-top: 10%;
+    /* max-width: 15%; */
+    /* top: 34px;
+    right: 45vw; */
+}
+
+/* CONTENT */
+
+main{
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content:center;
+    min-height: 85vh;
+    background-color: #201C1C;  
+}
+
+.container{
+    background-color: #D9D9D9;
+    border-style: solid;
+    border-radius: 10px;
+    width: 80vw;
+    height: 80vh;
+    position: relative;
+    top: 30px;
+    /* inwards */
+    display: flex; 
+    flex-direction: column;  
+    flex-wrap: wrap;
+    justify-content:center;
+}
+
+.container__title{
+    position: relative;
+    font-family:'Benne', serif ;
+    font-size:xx-large;
+    text-align: center;
+    max-width: 30%;
+    left:70%;
+    top:5%;
+    z-index: 3;
+}
+
+
+.container__form{
+    position:relative;
+    max-width: 50%;
+    left:20%;
+    top:-50%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-items: center;
+    align-items: center;
+}
+
+.container__text{
+    position: relative;
+    max-width: 50%;
+    top: 10%;
+    left:10%;
+    z-index: 2;
+}
+
+.container__image1{
+    position: relative;
+    max-width: 50%;
+    left: 49%;
+    top:-20%;
+    transform: scaleX(-1);
+}
+/* label {
+    display: block;
+    text-align: start;
+    font-size: 10px;
+  }
+  
+
+  form {
+    width: 450px;
+    padding: 20px;
+  } */
+
+
+
+
+
+/* Footer */
+
+.Footer{
+    background-color: #201C1C;
+    width: 100vw;
+    height: 5vh;
+}
