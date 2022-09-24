@@ -28,8 +28,10 @@ background-color: var(--fondo);
   min-height: 100vh;
   position: relative;
 }
+
 .agradecimiento{
     background-color: var(--blanco);
+    
 }
 .header {
   position: fixed;

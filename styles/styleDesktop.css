@@ -18,4 +18,22 @@
     .nav__h2{
         display:none
     }
+    .instituciones{
+        display: grid;
+
+        grid-template-areas: 
+        "nombre nombre nombre"
+        "logo descripcion descripcion"
+        ". descripcion descripcion"
+        ;
+    }
+    .section__H4nombreInstitucion{
+        grid-area: nombre;
+    }
+    .section__imgLogo{
+        grid-area: logo;
+    }
+    .section__pDescripcion{
+        grid-area: descripcion;
+    }
 }
