@@ -30,8 +30,22 @@ background-color: var(--fondo);
 }
 
 .agradecimiento{
-    background-color: var(--blanco);
-    
+    height: 4rem;
+    font-size: 3rem;
+    text-align: center;
+    background-image: linear-gradient(to right,var(--negro), var(--fondo), var(--menu), var(--navbar), var(--hoover), var(--blanco));
+    position: relative;
+    animation-name: gracias;
+    animation-duration: 8s;
+    animation-iteration-count: infinite;
+}
+@keyframes gracias{
+  0% {color: var(--blanco); content:0%; top:0px}
+  20% {color: var(--hoover); content:20%; top:0px}
+  40% {color: var(--navbar); content:40%; top:0px}
+  60% {color: var(--menu); content:60%; top:0px}
+  80% {color: var(--fondo); content:80%; top:0px}
+  100% {color: var(--negro); content:100%; top:0px}
 }
 .header {
   position: fixed;
@@ -42,8 +56,9 @@ background-color: var(--fondo);
   height: 10rem;
   align-content: space-between;
   align-self: center;
-  top: 3%;
+  top: 8%;
   z-index: 1;
+  
 }
 .header__div{
     margin-top: 1rem;
@@ -86,7 +101,7 @@ background-color: var(--fondo);
 }
 .tarjeta{
   background-color: var(--menu);
-  padding-top: 21vh;
+  padding-top: 23vh;
   width: 80vw;
   height: 90vh;
   border-radius: 8px;
@@ -95,6 +110,7 @@ background-color: var(--fondo);
   margin: 20px;
   text-align: center;
   transition: all 0.25s;
+  margin-top: 17%;
 }
 .main .tarjeta:hover{
   transform: translateY(-15px);
