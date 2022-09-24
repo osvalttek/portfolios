@@ -5,6 +5,10 @@
     background-color: var(--backgroundfooter);
     bottom: 0;
     color: var(--colorFooter);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
 }
 
 .footer__info{
@@ -12,11 +16,13 @@
     align-items: center;
     flex-direction: column;
     text-align: center;
-    margin-top: 1rem;
+    font-size: .7rem;
+    letter-spacing: 1px;
+    /* margin-top: 1rem; */
 }
 
 .direccion{
-    margin-bottom: .5rem;
+    margin-top: 1rem;
 }
 
 .direccion__detalle{
@@ -27,7 +33,7 @@
     text-decoration: underline;
 }
 .redes__menu{
-    margin: .5rem;
+    margin-bottom: 0.4rem;
 }
 .redes__enlace{
     text-decoration: none;
@@ -37,14 +43,8 @@
     height: 25px;
 }
 .derechos{
-    display: inline;
-    /* bottom: 0; */
-    justify-content: center;
-    /* margin-bottom: 1rem; */
-    line-height: 1rem;
-    font-size: .7rem;
-    /* padding-top: 2rem; */
-    margin-top: 1rem;
+    margin-top: 1.3rem;
+    font-size: .5rem;
 }
 .derechos__autor{
     margin-left: 10px;

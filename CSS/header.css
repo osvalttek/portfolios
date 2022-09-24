@@ -15,10 +15,11 @@
     /* margin-left: 1rem; */
     width: 3rem;
     /* height: auto; */
-    
+    cursor: pointer;
 }
 
 .menuCheck{
+    right: 50%;
     position: absolute;
     opacity: 0%;
     background-color: var(--backgroundIcon)
@@ -28,10 +29,11 @@
     /* margin-right: 2rem; */
     width: 2rem;
     height: 2rem;
+    cursor: pointer;
 }
 
 .navMobile{    
-    /* display: flex; para ver lo que estaba pasando*/
+    display: flex;
     display: none;
     position: fixed;
     flex-direction: column;
@@ -41,16 +43,16 @@
     width: 45vw;
     height: 45vh;
     background-color: var(--backgroundMenu);
-    border-radius: 1em; 
+    border-radius: 1em;
 }
 
 .navMobile__item{
     /* margin-bottom: 0; */
     text-align: center;
     text-decoration: none;
-    font-size: 1.7rem;
+    font-size: 1.5rem;
     color: var(--colorheader);
-    
+    color: #e9d9ab;
 }
 .closeMenu{
     /* margin-right: 2rem; */
@@ -58,7 +60,7 @@
     display: none;
     width: 2rem;
     height: 2rem;
-    background-color: var()
+    cursor: pointer;
 }
 
 .menuCheck:checked +.burgerMenu {

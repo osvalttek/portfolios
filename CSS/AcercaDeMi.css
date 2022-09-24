@@ -1,0 +1,64 @@
+
+.acerca{
+    margin: 1rem;
+    line-height: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.acerca > div{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: flex-end;
+    justify-content: space-around   ;
+}
+
+.acerca > div > code{
+    font-weight: 600;
+    margin-left: 1rem;
+    margin-top: 1rem;
+    text-align: center;
+}
+
+.acerca__pagina{
+    font-size: large;
+    text-align: center;
+    margin-top: 1rem;
+    margin-bottom: 1.5rem;
+    filter: drop-shadow(1px 1px 5px var(--colorbody));
+}
+
+
+.acerca__retrato{
+    width: 150px;
+    height:155px;
+    border-radius:160px;
+    border: 1px solid #b98f10;
+}
+
+/* .acerca__nombre{
+    padding: 1.5rem;
+    font-size: 1.1rem;
+    font-weight: 800;
+    display: flex;
+    align-items: flex-end;
+    flex-wrap: wrap;
+    text-align: center;
+    width: 100%;
+    justify-content: space-around;
+}
+ */
+.acerca__nombre > p{
+    margin-top: 2rem;
+}
+
+.acerca__acercaDeMi{
+    /* text-align: left;
+    margin: 1.5rem; */
+    font-weight: 550;
+    margin-top: 2rem;
+    line-height: 2rem;
+    text-align: justify;
+}
