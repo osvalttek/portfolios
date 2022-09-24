@@ -16,40 +16,66 @@
 }
 h1  { font-size: 3.5em; }
 h2  { font-size: 2em;   }
-h3  { font-size: 1.3em; }
+h3  { font-size: 1.1em; }
 p   { font-size: 0.9em; }
 ul  { list-style: none; }
 li  { font-size: 0.9em; }
 
+
+html, body{
+    width: 100vw;
+    color: var(--fontPrincipal);
+    background-color: var(--backgroundColor);
+}
+body{
+    overflow-x: hidden;
+}
 .container {
     max-width: 1400px;
     margin: auto;
+    display: flex;
+    align-items: center;
+    /* height: 30%; */
 }
 
 header {
     background-color: var(--navbarColor);
-    padding: 20px;
+    /* padding: 20px; */
+    min-height: 4.5rem;
+    width: 100vw;
 }
 
 #navbar li{
     display: inline;
     padding: 25px 20px;
+    font-size: 15px;
 }
 
 header .container {
+    width: 100vw;
     display: flex;
-    justify-content: center;
+    margin: 0 auto;
+    display: flex;
+    flex-flow: nowrap;
+    justify-content: space-between;
+    height: 4.5rem;
 }
 
 #navbar {
+    width: 100%;
     display: flex;
     margin: 0 auto;
+    display: flex;
+    flex-flow: nowrap;
+    justify-content: space-between;
+    /* background-color: white; */
+    padding-left: 2rem;
+    padding-right: 4rem;
 }
 
 .nav__menu {
     display: grid;
     grid-auto-flow: column;
-    
 }
 
 .nav__item {
@@ -77,7 +103,345 @@ header .container {
     display: none;
 }
 
+#profile{
+    display: flex;
+    justify-content: center;
+}
+#profile .div__img{
+    width: 70%;
+    padding: 40px 0;
+}
+.title{
+    display: flex;
+    justify-content: center;
+    font-size: 12px;
+}
+.title2{
+    display: flex;
+    justify-content: center;
+    font-size: 8.5px;
+}
+.social-media{
+    display: flex;
+    justify-content: space-between;
+    padding: 80px 10px;
+}
+.social-media img{
+    width: 70%;
+}
+.github, .linkedin, .facebook, .twitter, .instagram {
+    display: flex;
+    justify-content: center;
+}
+#main{
+    height: 100vh;
+}
+.portfolioImage{
+    display: flex;
+    justify-content: center;
+    padding: 15px;
+}
+.portfolioImage img{
+    width: 80%; 
+}
+.signInDiscord {
+    display: flex;
+    justify-content: center;
+    padding: 15px;
+}
+.signInDiscord img {
+    width: 80%;
+}
+.smashBan {
+    display: flex;
+    justify-content: center;
+    padding: 15px;
+}
+.smashBan img {
+    width: 80%;
+}
+#projects h3{
+    padding: 0 20px;
+}
+.container h2{
+    padding: 10px 20px;
+}
+.sobreMiTexto{
+    padding: 10px 20px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.sobreMiTexto img{
+    width: 200px;
+    padding: 10px;
+}
+.sobreMiTexto .udemy{
+    width: 100px;
+}
+.contacto h2 {
+    padding: 10px 20px;
+}
+.formulario form {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.email {
+    display: flex;
+    flex-direction: column;
+}
+#email {
+    width: 255px;
+}
+.message{
+    display: flex;
+    flex-direction: column;
+}
+#mensaje {
+    height: 200px;
+    background-color: var(-);
+}
+button{
+    cursor: pointer;
+    width: 80px;
+    height: 30px;
+    background-color: var(--grisClaro);
+    color: var(--white);
+    font-weight: bold;
+    border: 0;
+    border-radius: 3px;
+}
+button:hover{
+    background-color: var(--fontPrincipal);
+}
 
+footer {
+    display: flex;
+    justify-content: flex-end;
+    text-align: right;
+    padding: 10px 20px;
+    font-size: 12px;
+}
+
+
+@media (max-width: 700px) {
+    header {
+        /* display: flex;
+        justify-content: center; */
+    }
+    .nav__label {
+        display: block;
+        cursor: pointer;
+    }
+
+    .nav__menu {
+        position: fixed;
+        top: 80px;
+        bottom: 0;
+        background: var(--fontPrincipal);
+        width: 100%;
+        left: 0;
+        display: flex;
+        justify-content: space-evenly;
+        flex-direction: column;
+        align-items: center;
+        clip-path: circle(0 at center);
+        transition: clip-path 1s ease-in-out;
+        margin-top: -0.5rem;
+    }
+    .nav__input:checked + .nav__menu{
+        clip-path: circle(100% at center);
+    }
+    header{
+        position: sticky;
+        top: 0;
+        opacity: 0.98;
+    }
+    #navbar li {
+        font-size: 30px;
+        font-weight: bold;
+    }
+    
+    main .fimeTexto, .udemyTexto, .platziTexto{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    
+}
+/********************DESKTOP**************************/
+@media (min-width: 700px) {
+    body{
+        /* background-color: green; */
+    }
+    header{
+        position: sticky;
+        top: 0;
+        opacity: 0.98;
+    }
+    #navbar{
+        display: flex;
+        justify-content: space-evenly;
+        height: 72px;
+    }
+    #navbar li{
+        font-size: 1.5rem;
+        padding: 5px 20px;
+    }
+    #navbar li a{
+        display: block;
+    }
+    
+    .nav__logo{
+        display: none;
+    }
+    nav {
+        display: flex;
+        align-items: center;
+    }
+    #profile .div__img{
+        width: 20%;
+        padding-bottom: 0;
+    }
+    main {
+        height: 100vh;
+    }
+    .social-media{
+        padding: 40px 300px;
+    }
+    .social-media img {
+        width: 100%;
+    }
+    .title h1 {
+        font-size: 60px;
+    }
+    .title2 h2{
+        font-size: 30px;
+    }
+    .container h2 {
+        padding: 10px 0px;
+    }
+    #projects h3{
+        padding: 0 70px;
+        padding-top: 30px ;
+    }
+    .portfolioImage{
+        text-align: center;
+        padding-top: 30px;
+    }
+    .portfolioImage img{
+        border-radius: 8px;
+        box-shadow: 0 0 0 8px var(--fontPrincipal);
+        width: 80%;
+    }
+    .lineaTres {
+        padding-top: 80px;
+    }
+    .signInDiscord {
+        text-align: center;
+        padding-top: 30px;
+    }
+    .signInDiscord img {
+        border-radius: 8px;
+        box-shadow: 0 0 0 8px var(--fontPrincipal);
+        width: 80%;
+    }
+    .lineaCuatro {
+        padding-top: 80px;
+    }
+    .smashBan{
+        text-align: center;
+        padding-top: 30px;
+    }
+    .smashBan img{
+        border-radius: 8px;
+        box-shadow: 0 0 0 8px var(--fontPrincipal);
+        width: 80%;
+    }
+    .container .sobreMiTexto{
+        display: flex;
+        justify-content: center;
+    }
+    .container h2 {
+        padding-top: 80px;
+    }
+    .footer {
+        display: flex;
+        flex-direction: row-reverse;
+        text-align: right;
+        padding: 5px 20px;
+    }
+    .fimeTexto{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+    .fimeTexto p{
+        font-size: 20px;
+    }
+    .udemyTexto{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+    .udemyTexto p{
+        font-size: 20px;
+    }
+    .platziTexto {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+    .platziTexto p {
+        font-size: 20px;
+    }
+    .sobreMiTexto p{
+        padding: 10px ;
+        width: 500px;
+    }
+    .sobreMiTexto .fime{
+        width: 200px;
+        height: 100px;
+    }
+    .acercadeMi{
+        display: flex;
+        justify-content: center;
+    }
+    .sobreMiTexto {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+    }
+    .contacto{
+        max-width: 1400px;
+    }
+    #email {
+        width: 35vw;
+        background-color: var(--backgroundColor);
+        color: var(--white);
+        border: 1px solid;
+        border-color: var(--grisClaro);
+        border-radius: 5px;
+    }
+    #mensaje {
+        width: 35vw;
+        height: 40vh;
+        background-color: var(--backgroundColor);
+        color: var(--white);
+        resize: none;
+        border: 1px solid;
+        border-color: var(--grisClaro);
+        border-radius: 5px;
+    }
+}
+
+/*
+git add .
+git commit -m "mensaje de lo que se subio"
+git push origin claseEnLaQueEstoy
+*/
 
 /*
 body {

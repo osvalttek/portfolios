@@ -11,15 +11,18 @@
     <header>
         <div class="container">
             <nav id="navbar">
+                <img src="./img/EOMG.png" class="nav__logo">
+                
                 <label for="menu" class="nav__label">
                     <img src="./img/checkbtn.png" class="nav__img">
                 </label>
                 <input type="checkbox" class="nav__input" id="menu">
+
                 <ul class="nav__menu">
-                    <li><a href="" class="nav__item">Inicio</a></li></a>
-                    <li><a href="" class="nav__item">Proyectos</a></li>
-                    <li><a href="" class="nav__item">Acerca de Mi</a></li>
-                    <li><a href="" class="nav__item">Contacto</a></li>
+                    <li><a href="#main" class="nav__item">Inicio</a></li></a>
+                    <li><a href="#projects" class="nav__item">Proyectos</a></li>
+                    <li><a href="#sobreMi" class="nav__item">Acerca de Mi</a></li>
+                    <li><a href="#contacto" class="nav__item">Contacto</a></li>
                 </ul>
             </nav>
         </div>
@@ -27,7 +30,7 @@
     <main>
         <section id="main">
             <div id="profile">
-                <img src="./img/profile.png" alt="omarProfile">
+                <img class="div__img" src="./img/profile.png" alt="omarProfile">
             </div>
             <div class="title">
                 <h1>Hola! Soy Omar</h1>
@@ -37,9 +40,7 @@
             </div>
             <div class="social-media">
 
-                
-
-                <a href="#" target="_blank" class="github"><img src="./img/Github.png" alt="Github"></a>
+                <a href="#profile" target="_blank" class="github"><img src="./img/Github.png" alt="Github"></a>
                 <a href="#" class="linkedin"><img src="./img/linkedin.png" alt="Linkedin"></a>
                 <a href="#" class="facebook"><img src="./img/facebook.png" alt="Facebook"></a>
                 <a href="#" class="twitter"><img src="./img/twitter.png" alt="Twitter"></a>
@@ -71,48 +72,62 @@
         </section>
         
         <div class="container">
-            <h2>Acerca de Mi</h2>
+            <h2 id="sobreMi">Acerca de Mi</h2>
         </div>
-        <div class="container">
+        <div class="acercadeMi">
             <div class="sobreMiTexto">
-                <p>
-                    Estudié una carrera tecnica en la Facultad de Ingenieria Mecanica y Electrica 
-                    en Desarrollo de Software comenzando con fundamentos de programación, HTML, Javascript, PHP, C#, etc.
-                </p><br>
-                <p>
-                    Tomé un curso en Udemy de Master en Javascript con el instructor Victor Robles en las que se
-                    vió Angular, Typescript, practicas con Postman, NodeJS y JQuery con mas de 30 horas de apredizaje.
-                </p><br>
-                <p>
-                    Siguiendo con mi aprendizaje autonomo, con la realizacion de cursos de CSS, Javascript y maquetado
-                    Web en la plataforma de Platzi, siendo ésta una de las mas completas de las anteriores.
-                </p>
+                <div class="fimeTexto">
+                    <p>
+                        Estudié una carrera tecnica en la Facultad de Ingenieria Mecanica y Electrica 
+                        en Desarrollo de Software comenzando con fundamentos de programación, HTML, Javascript, PHP, C#, etc.
+                    </p>
+                    <img class="fime" src="./img/fime.png" alt="fimeLogo"><br>
+                </div>
+
+                <div class="udemyTexto">
+                    <p>
+                        Tomé un curso en Udemy de Master en Javascript con el instructor Victor Robles en las que se
+                        vió Angular, Typescript, practicas con Postman, NodeJS y JQuery con mas de 30 horas de apredizaje.
+                    </p><img class="udemy" src="./img/udemy.png" alt="udemyLogo">
+                </div>
+
+                <div class="platziTexto">
+                    <p>
+                        Siguiendo con mi aprendizaje autonomo, con la realizacion de cursos de CSS, Javascript y maquetado
+                        Web en la plataforma de Platzi, siendo ésta una de las mas completas de las anteriores.
+                    </p><img class="platzi" src="./img/platzi.png" alt="platziLogo"><br>
+                </div>
             </div>
             <div class="imagenes-cursos">
-                <img class="fime" src="./img/fime.png" alt="fimeLogo">
-                <img class="platzi" src="./img/platzi.png" alt="platziLogo"><br>
-                <img class="udemy" src="./img/udemy.png" alt="udemyLogo">
+                <!-- 
+                <br>
+                 -->
             </div>
         </div>
-        <div class="contacto">
-            <h2>Contacto</h2>
+        <div class="container">
+            <h2 id="contacto">Contacto</h2>
         </div>
 
         <div class="formulario">
             <form>
-                    <label class="emailLabel" for="Email"><h3>Correo Electronico</h3></label><br>
-                    <input type="email" name="email" id="email" required>
+                    <div class="email">
+                        <label class="emailLabel" for="Email"><h3>Correo Electronico</h3></label>
+                        <input type="email" name="email" id="email" required>
+                    </div>
+
                   <br>
-                    <label class="mensajeLabel" for="Message"><h3>Mensaje</h3></label><br>
-                    <textarea class="mensaje" name="mensaje" id="mensaje" cols="30" rows="15" ></textarea><br>
+                  <div class="message">
+                      <label class="mensajeLabel" for="Message"><h3>Mensaje</h3></label>
+                      <textarea class="mensaje" name="mensaje" id="mensaje" cols="30" rows="15" ></textarea><br>
+                  </div>
                 
                 <button class="submit" type="submit" value="Enviar">ENVIAR</button>
             </form>
             
         </div>
+        <div class="footer">
+            Copyright &copy; EOMG 2022 <br> Todos los derechos reservados.
+         </div>
     </main>
-    <footer>
-
-    </footer>
 </body>
 </html>
