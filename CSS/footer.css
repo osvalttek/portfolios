@@ -30,7 +30,7 @@
 }
 .send-email{
     color: var(--fontColor);
-    text-decoration: underline;
+    text-decoration: underline 1px solid #b98f10;
 }
 .redes__menu{
     margin-bottom: 0.4rem;
