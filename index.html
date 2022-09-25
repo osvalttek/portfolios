@@ -15,130 +15,92 @@
         crossorigin="anonymous"></script>
 </head>
 
-<body class="project">
+<body>
     <header>
-        <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light">
+        <nav class="navbar fixed-top navbar-expand-lg nav-styles">
             <div class="container-fluid">
-                <a class="navbar-brand" href="#">Navbar</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
-                    aria-label="Toggle navigation">
+                <a class="navbar-brand" href="#">
+                    <img src="./assets/pumpkin.svg" alt="" class="d-inline-block align-text-top pumpkin" />
+                </a>
+                <button class="navbar-toggler hamb-menu" type="button" data-bs-toggle="offcanvas"
+                    data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-                    <div class="navbar-nav">
-                        <a class="nav-link active" aria-current="page" href="#" target="_self">Home</a>
-                        <a class="nav-link" href="#about_section" target="_self">About me</a>
-                        <a class="nav-link" href="#experience_section" target="_self">Experience</a>
-                        <a class="nav-link" href="#skills_section" target="_self">Skills</a>
-                        <a class="nav-link" href="#" target="_self">Contact</a>
+                <div class="offcanvas offcanvas-end offcanvas-width" tabindex="-1" id="offcanvasExample"
+                    aria-labelledby="offcanvasExampleLabel">
+                    <div class="offcanvas-header">
+                        <button type="button" class="chevron-icon" data-bs-dismiss="offcanvas" aria-label="Close">
+                            <i class='bx bx-chevron-right chevron-mobile'></i>
+                        </button>
+                    </div>
+                    <div class="offcanvas-body menu-services">
+                        <a class="nav-link active" aria-current="page" href="#welcome_section" target="_self">
+                            <i class='bx bx-home-heart'></i>Home
+                        </a>
+
+                        <a class="nav-link " href="#about_section" target="_self">
+                            <i class='bx bx-user-circle'></i>About me
+                        </a>
+
+                        <a class="nav-link" href="#experience_section" target="_self">
+                            <i class='bx bx-briefcase-alt-2'></i>Experience</a>
+
+                        <a class="nav-link" href="#skills_section" target="_self">
+                            <i class='bx bx-code-alt'></i></i> Skills</a>
+
+                        <a class="nav-link" href="#contact" target="_self">
+                            <i class='bx bx-envelope'></i></i></i>Contact
+                        </a>
                     </div>
                 </div>
             </div>
         </nav>
     </header>
     <main>
-        <section class="first-section" id="">
-            <div class="container welcome-text">
-                <h1>Hello World!</h1>
+        <!-- Welcome Section -->
+        <section class="sections_styles--general welcome_section" id="welcome_section">
+            <div class="welcome_container--text">
+                <h1 class="welcome_title"> Hello World! </h1>
             </div>
         </section>
-        <section class="second-section" id="home_section">
-            <div class="second-section-container">
-                <div class="phrase">
-                    <blockquote>
-                        Welcome to the REAL WORLD I T SUCKS You’re gona L O V E I T” -
-                        Monica Geller (Friends)
-                    </blockquote>
+
+        <!-- About me Section -->
+        <section class="sections_styles--general about_section" id="about_section">
+            <div class="about_section_container">
+                <div class="about_me_container">
+                    <div class="about-text-container">
+                        <p class="about-description">
+                            I am Web Application Developer with 6+ years of experience
+                            creatinig, designing and testing web applications with modern
+                            technologies such as Angular, HTML5, CSS3, and JavaScript and
+                            develop in the Servicenow platform, and using the Agile / SCRUM
+                            methodology.
+                        </p>
+                    </div>
                 </div>
-            </div>
-            <div class="second-section-container">
-                <div class="photoId">
+                <div class="photo_container">
                     <img src="./assets/image 28.svg" class="user" alt="ana" />
                 </div>
             </div>
         </section>
 
-        <section class="third-section" id="about_section">
-            <div class="manchas-img">
-                <img src="./assets/mancitas y ramita.svg" class="ramita-desktop" alt="ramita-desktop" />
-            </div>
-            <div class="about-me">
-                <div class="about-text-container-desktop">
-                    <p class="about-description">
-                        I am Web Application Developer with 6+ years of experience
-                        creatinig, designing and testing web applications with modern
-                        technologies such as Angular, HTML5, CSS3, and JavaScript and
-                        develop in the Servicenow platform, and using the Agile / SCRUM
-                        methodology.
-                    </p>
-                </div>
-            </div>
-        </section>
-        <section class="third-section-mobile" id="about_section">
-            <div class="manchas-img-mobile">
-                <img src="./assets/mancitas y ramita.svg" class="ramita-mobile" alt="ramita-desktop" />
-            </div>
-            <div class="about-me-mobile">
-                <div class="about-text-container-mobile">
-                    <p class="about-description-mobile">
-                        I am Web Application Developer with 6+ years of experience
-                        creatinig, designing and testing web applications with modern
-                        technologies such as Angular, HTML5, CSS3, and JavaScript and
-                        develop in the Servicenow platform, and using the Agile / SCRUM
-                        methodology.
-                    </p>
-                </div>
-            </div>
-        </section>
-
-        <section class="fourth-section" id="experience_section">
+        <!-- Experience Section-->
+        <section class="sections_styles--general experience_section" id="experience_section">
             <h2>Experience</h2>
             <div class="timeline">
                 <div class="timeline__event animated fadeInUp delay-3s timeline__event--type1">
                     <div class="timeline__event__icon">
-                        <!-- <i class='bx bxs-chevron-right'></i> -->
-                        <img src="./assets/accenture_logo.svg" class="accenture_logo" alt="accenture_logo">
+                        <img src="./assets/globant_Logo.svg" class="logo" alt="accenture_logo">
                     </div>
-                    <div class="timeline__event__date">Accenture</div>
+                    <div class="timeline__event__date">September 2021 - February 2022</div>
                     <div class="timeline__event__content">
-                        <div class="timeline__event__title">SOFTWARE DEVELOPER ANALYST</div>
+                        <div class="timeline__event__title">WEB UI DEVELOPER</div>
                         <div class="timeline__event__description">
                             <p>
-                            <h5>Servicenow Developer</h5>
                             <ul>
-                                <li>
-                                    Development of scripts, service catalog , and others requirements for different
-                                    applications along
-                                    with API management, Service Portal using AngularJs, JavaScript.
-                                </li>
-                                <li>Accessibility tools such as NVDA for story development and solving accessibility
-                                    bugs.
-                                </li>
-                                <li>Charged of developing unit test for integration services using the framework Jest.
-                                </li>
-                                <li>
-                                    Involved in demos and KT's for client and L2, support the team by being the POC for
-                                    the Support
-                                    Queue to help testers and documentation.
-                                </li>
-                            </ul>
-                            </p>
-                            <p>
-                            <h5>Frontend Developer</h5>
-                            <ul>
-                                <li>
-                                    Mainly focused on the redesign of several components using CSS and Bootstrap along
-                                    with
-                                    modifications/adjustments to the HTML.
-
-                                </li>
-                                <li>
-                                    Contributed solving defects raised by testers and meet with other teams to perform
-                                    change
-                                    integrations.
-
-                                </li>
+                                <li>React training where I learned the basics components and elements of the library,
+                                    like hooks, and a
+                                    review of JavaScript features like, hoisting, callbacks, promises, etc</li>
                             </ul>
                             </p>
                         </div>
@@ -146,51 +108,68 @@
                 </div>
                 <div class="timeline__event animated fadeInUp delay-2s timeline__event--type2">
                     <div class="timeline__event__icon">
-                        <i class="bx bx-cake"></i>
+                        <img src="./assets/accenture_logo.svg" class="logo" alt="">
                     </div>
-                    <div class="timeline__event__date">20-08-2019</div>
-                    <div class="timeline__event__content">
-                        <div class="timeline__event__title">Lunch</div>
+                    <div class="timeline__event__date">January 2018 - September 2021</div>
+                    <div class="timeline__event__content big_content">
+                        <div class="timeline__event__title">SOFTWARE DEVELOPER ANALYST</div>
                         <div class="timeline__event__description">
                             <p>
-                                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vel,
-                                nam! Nam eveniet ut aliquam ab asperiores, accusamus iure
-                                veniam corporis incidunt reprehenderit accusantium id aut
-                                architecto harum quidem dolorem in!
+                            <h4>Servicenow Developer</h4>
+                            <ul>
+                                <li>
+                                    Development of scripts, service catalog , and others requirements for different
+                                    applications along with API management, Service Portal using AngularJs, JavaScript.
+                                </li>
+                                <li>
+                                    Accessibility tools such as NVDA for story development and solving accessibility
+                                    bugs.
+                                </li>
+                                <li>
+                                    Charged of developing unit test for integration services using the framework Jest.
+                                </li>
+                                <li>
+                                    Involved in demos and KT's for client and L2, support the team by being the POC for
+                                    the Support Queue to help testers and documentation.
+                                </li>
+                            </ul>
+                            </p>
+
+                            <p>
+                            <h4>Frontend Developer</h4>
+                            <ul>
+                                <li>
+                                    Mainly focused on the redesign of several components using CSS and Bootstrap along
+                                    with
+                                    modifications/adjustments to the HTML.
+                                </li>
+                                <li>
+                                    Contributed solving defects raised by testers and meet with other teams to perform
+                                    change
+                                    integrations.
+                                </li>
+                            </ul>
                             </p>
                         </div>
                     </div>
                 </div>
                 <div class="timeline__event animated fadeInUp delay-1s timeline__event--type3">
-                    <div class="timeline__event__icon">
-                        <i class="bx bx-cake"></i>
+                    <div class="timeline__event__icon john-deere-logo">
+                        <img src="./assets/john-deere-logo.png" class="logo" alt="john-deere-logo">
                     </div>
-                    <div class="timeline__event__date">20-08-2019</div>
+                    <div class="timeline__event__date">September 2016 - October 2017</div>
                     <div class="timeline__event__content">
-                        <div class="timeline__event__title">Exercise</div>
+                        <div class="timeline__event__title">Tech Support Intern</div>
                         <div class="timeline__event__description">
                             <p>
-                                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vel,
-                                nam! Nam eveniet ut aliquam ab asperiores, accusamus iure
-                                veniam corporis incidunt reprehenderit accusantium id aut
-                                architecto harum quidem dolorem in!
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                <div class="timeline__event animated fadeInUp timeline__event--type1">
-                    <div class="timeline__event__icon">
-                        <i class="bx bx-cake"></i>
-                    </div>
-                    <div class="timeline__event__date">20-08-2019</div>
-                    <div class="timeline__event__content">
-                        <div class="timeline__event__title">Birthday</div>
-                        <div class="timeline__event__description">
-                            <p>
-                                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vel,
-                                nam! Nam eveniet ut aliquam ab asperiores, accusamus iure
-                                veniam corporis incidunt reprehenderit accusantium id aut
-                                architecto harum quidem dolorem in!
+                            <ul>
+                                <li>
+                                    Inventory support for laptops and printers, verifying that all floor machines were
+                                    updated with the
+                                    corresponding OS in addition to reports and forms.
+                                </li>
+                                <li>Sharepoint</li>
+                            </ul>
                             </p>
                         </div>
                     </div>
@@ -199,89 +178,123 @@
         </section>
 
 
-        <!-- skills desktop -->
-        <section class="fifth-section" id="skills_section">
-            <div class="skills-container">
-                <picture class="picture-skill">
+        <!-- Tools, trainings and certifications Section -->
+        <section class="sections_styles--general skills_section" id="skills_section">
+            <div class="skills_container">
+                <picture class="picture_skill">
                     <source />
                     <img src="./assets/HTML5_logo_resized.svg" class="skill-item" alt="html_logo" />
                 </picture>
-                <picture class="picture-skill">
+                <picture class="picture_skill">
                     <source />
                     <img src="./assets/css_logo.svg" class="skill-item" alt="html_logo" />
                 </picture>
-                <picture class="picture-skill">
+                <picture class="picture_skill">
                     <source />
                     <img src="./assets/javascript_logo.svg" class="skill-item" alt="html_logo" />
                 </picture>
-                <picture class="picture-skill">
+                <picture class="picture_skill">
                     <source />
                     <img src="./assets/angular-icon.svg" class="skill-item" alt="html_logo" />
                 </picture>
-                <picture class="picture-skill">
+                <picture class="picture_skill snow_display_desktop">
                     <source />
                     <img src="./assets/snow_logo.svg" class="skill-item resize_snow_logo" alt="html_logo" />
                 </picture>
-                <picture class="picture-skill">
+                <picture class="picture_skill">
                     <source />
                     <img src="./assets/vscode_logo.svg" class="skill-item" alt="html_logo" />
                 </picture>
-                <picture class="picture-skill">
+                <picture class="picture_skill">
                     <source />
                     <img src="./assets/git_logo 1.svg" class="skill-item resize_git_logo" alt="html_logo" />
                 </picture>
-                <picture class="picture-skill">
+                <picture class="picture_skill">
                     <source />
                     <img src="./assets/figma_logo.svg" class="skill-item resize_figma_logo" alt="html_logo" />
                 </picture>
-                <picture class="picture-skill">
+                <picture class="picture_skill">
                     <source />
                     <img src="./assets/azure_logo.svg" class="skill-item resize_azure_logo" alt="html_logo" />
                 </picture>
-            </div>
-        </section>
-        <!--ends skills desktop -->
-        <!-- Skills Mobile -->
-        <section class="fifth-section-mobile" id="skills_section">
-            <div class="skills-container-mobile">
-                <picture class="picture-skill-mobile">
+                <picture class="picture_skill snow_display_mobile">
                     <source />
-                    <img src="./assets/HTML5_logo_resized.svg" class="skill-item-mobile" alt="html_logo" />
-                </picture>
-                <picture class="picture-skill-mobile">
-                    <source />
-                    <img src="./assets/css_logo.svg" class="skill-item-mobile" alt="html_logo" />
-                </picture>
-                <picture class="picture-skill-mobile">
-                    <source />
-                    <img src="./assets/javascript_logo.svg" class="skill-item-mobile" alt="html_logo" />
-                </picture>
-                <picture class="picture-skill-mobile">
-                    <source />
-                    <img src="./assets/angular-icon.svg" class="skill-item-mobile" alt="html_logo" />
-                </picture>
-                <picture class="picture-skill-mobile">
-                    <source />
-                    <img src="./assets/vscode_logo.svg" class="skill-item-mobile" alt="html_logo" />
-                </picture>
-                <picture class="picture-skill-mobile">
-                    <source />
-                    <img src="./assets/git_logo 1.svg" class="skill-item-mobile resize_git_logo_mobile"
-                        alt="html_logo" />
-                </picture>
-                <picture class="picture-skill-mobile">
-                    <source />
-                    <img src="./assets/azure_logo.svg" class="skill-item-mobile resize_azure_logo_mobile"
-                        alt="html_logo" />
-                </picture>
-                <picture class="picture-skill-mobile">
-                    <source />
-                    <img src="./assets/snow_logo.svg" class="skill-item-mobile resize_snow_logo_mobile"
-                        alt="html_logo" />
+                    <img src="./assets/snow_logo.svg" class="skill-item resize_snow_logo" alt="html_logo" />
                 </picture>
             </div>
+            <div class="trainings_certifications_container">
+                <h1 class="skills_title">Trainings</h1>
+                <div class="trainings_list_container">
+                    <ul>
+                        <li class="trainings_item">
+                            <i class='bx bx-bookmark'></i>
+                            Frontend Academy
+                        </li>
+                        <li class="trainings_item">
+                            <i class='bx bx-bookmark'></i>
+                            Servicenow
+                        </li>
+                        <li class="trainings_item">
+                            <i class='bx bx-bookmark'></i>
+                            Agile Fundamentals
+                        </li>
+                        <li class="trainings_item">
+                            <i class='bx bx-bookmark'></i>
+                            Storytelling
+                        </li>
+                    </ul>
+                </div>
+                <h1 class="skills_title">Certificaciones</h1>
+                <div class="certifications_list_container">
+                    <ul>
+                        <li><i class='bx bx-certification' ></i>MS 98-383: Introduction to Programmign Using HTML and CS</li>
+                        <li><i class='bx bx-certification' ></i>MS 98-375: HTML5 Application Development Fundamentals</li>
+                    </ul>
+                </div>
+            </div>
         </section>
+
+        <!-- Contact me -->
+        <section class="sections_styles--general contact_me_section" id="contact">
+            <div style="height: 152px; overflow: hidden;" class="contact-wave">
+                <svg viewBox="0 0 500 150" preserveAspectRatio="none" style="height: 100%; width: 100%;">
+                    <path d="M-0.00,49.99 C150.00,150.00 349.20,-49.99 500.00,49.99 L500.00,150.00 L-0.00,150.00 Z"
+                        style="stroke: none; fill: #E2C1A0;"></path>
+                </svg>
+            </div>
+            <div class="form_container">
+                <h1 class="form_title">Let's get in touch!</h1>
+                <form class="form_content" action="https://formspree.io/f/mgeqkong" method="POST">
+
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name" placeholder="Your name..">
+
+                    <label for="lname">Company</label>
+                    <input type="text" id="lname" name="lastname" placeholder="Company">
+
+                    <label for="subject">Message</label>
+                    <textarea id="subject" name="subject" placeholder="Write something.."
+                        style="height:200px"></textarea>
+                    <div class="submit-btn">
+                        <button type="submit" class="button button1">Send</button>
+                    </div>
+                </form>
+            </div>
+        </section>
+
     </main>
+    <footer class="footer_icons--container">
+        <div class="footer_icons--list">
+            <a href="tel:123-435-6789" class="contact_icons" target="_blank"><i class='bx bx-mobile-alt'></i></a>
+        <a href="ana.sanchezcvr@gmail.com" target="_blank" class="contact_icons"><i class='bx bxl-gmail'></i></a>
+        <a href="https://www.linkedin.com/in/anaceciliasanchezcovarrubias/" target="_blank" class="contact_icons"><i class='bx bxl-linkedin-square'></i></a>
+        <a href="https://github.com/AnaCova" target="_blank" class="contact_icons"><i class='bx bxl-github'></i></a>
+        <a href="https://www.figma.com/file/XfD1pnuPFyzM1wfdBI6Q1t/Ana_Sanchez_web_page?node-id=0%3A1" target="_blank" class="contact_icons"><i class='bx bxl-figma'></i></a>
+        </div>
+        <div class="footer_legend--description">
+            <h6 class="legend">Images were taken from pages like Pinterest, Wikimedia and Logo.wine, also icons are from Boxicons</h6>
+        </div>
+    </footer>
 </body>
 
 </html>
