@@ -1,0 +1,102 @@
+/* main curriculum */
+.main__divApartado {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    border: 0.188rem solid #cedbeb;
+    border-radius: 1rem;
+    padding: 1rem;
+    align-items: flex-start;
+  }
+  .main__educacion {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+    padding-left: 1.875rem;
+  }
+  .main__educacion .main__ptitulos {
+    font-family: "poppins", sans-serif;
+    font-size: 0.9rem;
+    font-weight: bold;
+    color: #44566c;
+  }
+  .main__educacion .date {
+    font-size: 0.75rem;
+    color: #8697a8;
+  }
+  .div__Progreso {
+    background: #2b21c01a;
+    justify-content: flex-start;
+    border-radius: 5px;
+    align-items: center;
+    padding: 0 4px;
+    display: flex;
+    height: 1.5rem;
+    width: 100%;
+  }
+  .div__htmlProgreso,.div__CSSProgreso,.div__CSSProgreso, 
+  .div__JSProgreso,.div__SQLProgreso,.div__CProgreso{
+    box-shadow: 0 10px 40px -10px #1751cf70;
+    border-radius: 5px;
+    height: 1.5rem;
+    color: #fff;
+    width: 0;
+  }
+  .div__htmlProgreso{
+    animation: loadhtml 10s normal forwards;
+    background: #3134e7ce;
+  }
+  .div__CSSProgreso{
+    animation: loadCSS 10s normal forwards;
+    background: #f89c11ce;
+  }
+  .div__JSProgreso{
+    animation: loadJS 10s normal forwards;
+    background: #3134e7ce;
+  }
+  .div__SQLProgreso{
+    animation: loadSQL 10s normal forwards;
+    background: #f89c11ce;
+  }
+  .div__CProgreso{
+    animation: loadC 10s normal forwards;
+    background: #3134e7ce;
+  }
+  @keyframes loadhtml {
+      0% { width: 0; }
+      100% { width: 70%; }
+  }
+  @keyframes loadJS {
+    0% { width: 0; }
+    100% { width: 40%; }
+  }
+  @keyframes loadCSS {
+    0% { width: 0; }
+    100% { width: 70%; }
+  }
+  @keyframes loadSQL {
+    0% { width: 0; }
+    100% { width: 60%; }
+  }
+  @keyframes loadC {
+    0% { width: 0; }
+    100% { width: 50%; }
+  }
+
+  @media (min-width: 800px) {
+    .div__Progreso {
+      height: 1rem;
+    }
+    .div__htmlProgreso,.div__CSSProgreso,.div__CSSProgreso, 
+    .div__JSProgreso,.div__SQLProgreso,.div__CProgreso{
+      height: 1rem;
+    }
+    .main__divApartado > p{
+      font-size: .8rem;
+    }
+  }
+    
+
+  
+

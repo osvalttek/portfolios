@@ -1,0 +1,51 @@
+.main__divMaps .div__map{
+    width: 90%;
+    margin-bottom: 30px;
+    margin-top: 20px;
+}
+.main__divElemento{
+    width: 100%;
+    padding: 10px;
+    text-align: center;
+}
+.main__elemento input, 
+.main__elemento textarea{
+    width: 100%;
+    padding: 10px 0;
+    color: #0c0b0b;
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid #cedbeb;
+    margin-bottom: 30px;
+    border-radius: 5px;
+    font-family: "poppins", sans-serif;
+    outline: .5px solid gainsboro;  
+}
+.main__elementoInput{
+    text-align: center;
+}
+.main__elementoInput input[type="submit"]{
+    width:30%;
+    background-color: #304cfd;
+    border:none;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 5px;
+    font-family: "poppins", sans-serif;
+    color:#f8f6f6;
+}
+.main__elemento input:-webkit-autofill,
+.main__elemento input:-webkit-autofill:focus{
+    -webkit-box-shadow: 0 0 0px 1000px #fff inset;
+}
+
+@media (min-width: 800px) {
+
+    .main__elemento input, 
+.main__elemento textarea{
+    width: 80%;
+}
+
+}
