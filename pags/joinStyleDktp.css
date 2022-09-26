@@ -62,18 +62,17 @@
     
     .container__image1{
         position: absolute;
-        max-height: 63%;
+        max-height: 53%;
         z-index: 1;
-        left: 23vw;
-        top: 50%;
+        left: 13%;
+        top: -15%;
     }
     
     .container__form{
-        border-style: solid;
         position:absolute;
-        width: 60%;
-        height: 200%;
-        left: 58%;
+        width: 45%;
+        height: 80%;
+        left: 55%;
         top:100%;
         display: flex;
         flex-direction: column;
@@ -81,16 +80,24 @@
         /* justify-content: center;
         align-items: center; */
         font-size: 150%;
+        top:7%
+
     }
 
     .container__form_nameInput{
         position: relative;
-        width: 60%;
+        width: 90%;
     }
 
     .container__form_emailInput{
         position: relative;
-        width: 60%;    
+        width: 90%;    
+    }
+
+    .container__form_messageInput{
+        position: relative;
+        width: 90%;
+        height: 65%;
     }
 
     .container__form_messageLabel{
@@ -98,37 +105,32 @@
         left:0%;
     }
 
-    .container__form_messageInput{
-        position: relative;
-        width: 60%;
-        height: 10%;
-    }
-
     .container__form_button{
         position: relative;
         align-self: center;
         top: 3%;
-        width: 60%;
+        width: 90%;
     }
 
     .container__title{
         position: absolute;
         font-family:'Benne', serif ;
-        font-size: 800%;
+        font-size: 600%;
         text-align: center;
-        left:10%;
+        left:20%;
         z-index: 3;
+        top: 40%;
     }
     
     .container__text{
         z-index: 2;
         position: relative;
         max-width: 30vw;
-        max-height: 10vh;
-        font-size: 200%;
+        /* height: %; */
+        font-size: 150%;
         font-family:'Montserrat', sans-serif;
         text-align: start;
-        top: 11%;
+        top: 20%;
         
     }
     

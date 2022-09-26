@@ -1,0 +1,119 @@
+@media screen and (min-width: 768px){
+/* HEADER */
+
+.burgerM{
+    display: none;}
+    /* /* top:2.5vh;
+    left:3vw;
+    max-width: 2.5vh;
+    max-height: 2.5vh; */
+
+.bLine{
+    margin-top: 4.1%;
+    min-width: 90%;
+    left:2.5%;
+}    
+
+.header__i3{
+    margin-top: 1.5%;
+    right:1%
+}
+
+.header__links{
+    position: relative;
+    height: 4vh;
+    width: 100%;
+    margin-top: 4.2%;
+    /* right: 41vw;
+    top: 6.5vh; */
+}
+
+.header__links_what{
+    position: absolute;
+    left:20%;
+    color: black;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 150%;
+}
+
+.header__links_why{
+    position: absolute;
+    left:50%;
+    color: black;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 150%;
+}
+
+.header__links_join{
+    position: absolute;
+    left:80%;
+    color: black;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 150%;
+}
+
+
+
+
+/* MAIN/CONTENT */
+
+.container{
+    top:10vh;
+    height: 70vh ;
+    width: 115vh;
+}
+
+.item1{
+    left: -1vh;
+    height: 60vh;
+    width: 30vw;
+    top: 5vh;
+}
+
+.dream1{
+    font-size:1.8vh;
+   
+}
+
+.fraseBo{
+    font-size: 120%;
+    width: 50%;
+    left:1vh;
+}
+
+.title1{
+    font-size:5vh; 
+    width: 10%;
+    /* top: 2vh; */
+    left:-35vw;
+}
+
+.hands{
+    left:15vw;
+    top:3vh;
+    min-width: 20%;
+   min-height: 45%;
+}
+
+
+.statue{
+    left:25vw;
+    top:25vh;
+    min-width:5%;
+    min-height: 25%;  
+}
+
+}
+
+/* vw = 100 de la pantalla. 
+en el cambio de tamaños de pantalla cambian las proporciones de distancia 
+cambiar la medida de las imagenes a px o más específicas. 
+
+Encapsular en divs y jugar con propiedades de Flex (justify-align-etc.)
+contenedor pdre tiene que ser Relative e hijos absolutos. (checar documentación de esto)
+
+*/
+
+
+
+
