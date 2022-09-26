@@ -4,7 +4,6 @@
     line-height: 1.5rem;
     display: flex;
     flex-direction: column;
-    justify-content: center;
 }
 
 .acerca > div{
@@ -30,14 +29,6 @@
     filter: drop-shadow(1px 1px 5px var(--colorbody));
 }
 
-
-.acerca__retrato{
-    width: 150px;
-    height:155px;
-    border-radius:160px;
-    border: 1px solid #b98f10;
-}
-
 /* .acerca__nombre{
     padding: 1.5rem;
     font-size: 1.1rem;
@@ -50,14 +41,16 @@
     justify-content: space-around;
 }
  */
-.acerca__nombre > p{
-    margin-top: 2rem;
-}
 
-.acerca__acercaDeMi{
+ .acerca__acercaDeMi{
     /* text-align: left;
     margin: 1.5rem; */
-    font-weight: 550;
+    margin-top: 2rem;
+    line-height: 2rem;
+    text-align: justify;
+}
+
+.herramientas{
     margin-top: 2rem;
     line-height: 2rem;
     text-align: justify;

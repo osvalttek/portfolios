@@ -20,8 +20,7 @@
 }
 
 html{
-    /* font-size: 62.5%; */
-    font-size: 70%;
+    font-size: 62.5%;
     color: var(--colorFont);
     letter-spacing: 3px;
     

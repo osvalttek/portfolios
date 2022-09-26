@@ -1,26 +1,29 @@
-body > main{
+.inicio{
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
-    align-items: center
+    align-items: center;
+    top: 10vw;
 }
+
 section > div > code{
     margin: 2rem;
     font-weight: 600;
 }
 
-.inicio__hero{
-    display: flex;
-    margin-top: .4rem;
-    display: flex;
-    margin-top: 0.4rem;
-    flex-direction: column;
-    align-items: center;
+.inicio{
+    margin-top: 2rem;
 }
 
-.inicio__hero-img{
-    height: auto;
-    max-width: 100vw;
-    max-height: 50vh;
-    border: 1px solid #b98f10
+.inicio__retrato{
+    width: 150px;
+    height:155px;
+    border-radius:160px;
+    border: 1px solid #b98f10;
+    margin-top: 2rem;
+    animation: name duration timing-function delay iteration-count direction fill-mode;
+}
+
+.inicio__nombre{
+    text-align: center;
+    margin-top: 1rem;
 }
