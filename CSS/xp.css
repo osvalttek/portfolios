@@ -1,0 +1,56 @@
+.xp{
+    margin: 1rem;
+    line-height: 1.5rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.xp__pagina{
+    font-size: large;
+    text-align: center;
+    margin-top: 1rem;
+    margin-bottom: 1.5rem;
+    filter: drop-shadow(1px 1px 5px var(--colorbody));
+}
+
+.xp__detalle{
+    /* text-align: left;
+    margin: 1.5rem; */
+    margin-top: 1rem;
+    line-height: 2rem;
+    text-align: justify;
+}
+
+.tabla{
+    margin-top: 2rem;
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;    
+}
+
+.tabla__item--HCJ{
+    width: 11rem;
+    height: auto;
+}
+
+.tabla__item{
+    width: 7rem;
+    height: auto;
+}
+
+.tabla__item--python{
+    width: 4rem;
+    height: auto;
+}
+
+.xp__cv{
+    margin-top: 1rem;
+}
+
+.cv__boton{
+    padding: .1rem;
+    margin: .2rem .2rem;
+}
+

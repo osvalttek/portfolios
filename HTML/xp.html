@@ -4,19 +4,19 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" href="../IMG/kcdLogo-pestaña.png" class="icono-pestaña">
+    <title>Experiencia | Kevin Conde</title>
     <link rel="stylesheet" href="../CSS/root.css">
     <link rel="stylesheet" href="../CSS/header.css">
     <link rel="stylesheet" href="../CSS/footer.css">
-    <link rel="stylesheet" href="../CSS/Inicio.css">
-    <title>Inicio | Kevin Conde</title>
+    <link rel="stylesheet" href="../CSS/xp.css">
 </head>
 <body>
-    <header class="header">        
+    <header class="header">
+                
         <a href="../HTML/Inicio.html">
             <img class="header__logo" src="../IMG/kcdLogo-01.png" alt="logotipo">
         </a>
-
+        
         <input type="checkbox" id="menu" class="menuCheck">
         <label for="menu" class="linkMobile burgerMenu">
             <img
@@ -39,23 +39,42 @@
             <a href="../HTML/xp.html" class="navMobile__item">Experiencia</a>
             <a href="#" class="navMobile__item">Trabajos</a>
             <a href="#" class="navMobile__item">Contactame</a>
-        </nav>        
+        </nav>         
     </header>
 
-    <main>
-        <section class="inicio">            
-            <div class="inicio__titulo-bienvenida">
-                <strong></strong><code><span>! B I E N V E N I D @ !</span></code>          
+    <main class="xp">    
+         <section>
+            <div class="xp__detalle">
+                <h1 class="xp__pagina">Experencia</h1>
+                <p>                
+                    Inicie en el mundo de las tecnologias desde el 2018 en el Area de Soporte Funcional
+                    administrando los modulos financieros del sistema ERP.
+                    <br>
+                    <br>                
+                    Actualmente estoy en proceso convertirme en un Desarrollador Web por lo cual me estoy
+                    capacitando para dominar las siguientes Tecnologias
+                </p>
             </div>
-            <div class="inicio__Foto">
-                <img class="inicio__retrato" src="../IMG/Retrato.jpg" alt="Foto">
+            
+            <div class="xp__tecnologias">
+                <ul class="tabla">
+                    <li class="tabla__tec"><img class="tabla__item--HCJ" src="../IMG/tecnologias/hmtlCssJs.png" alt=""></li>
+                    <li class="tabla__tec"><img class="tabla__item" src="../IMG/tecnologias/react.png" alt=""></li>
+                    <li class="tabla__tec"><img class="tabla__item" src="../IMG/tecnologias/sql.png" alt=""></li>
+                    <li class="tabla__tec"><img class="tabla__item--python" src="../IMG/tecnologias/python.png" alt=""></li>
+                </ul>
             </div>
-            <div class="inicio__nombre">
-                <span><h1>¡Hola!</h1></b>
-                    <h4>Soy Kevin Conde</h4>
-                    <code>{Developer}</code>
-                </span>
-            </div>     
+
+            <div class="xp__cv">
+                <br>
+                <p>Si deseas consultar mi CV puedes descargarlo desde
+                <a class="cv" href="../IMG/CV Kevin Conde.pdf" download="CV Kevin" target="_blank">
+                    <button class="cv__boton" type="button">
+                        A Q U I
+                    </button>
+                </a>
+            </p>
+            </div>
         </section>
     </main>
     
