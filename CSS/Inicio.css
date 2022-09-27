@@ -14,16 +14,17 @@ section > div > code{
     margin-top: 2rem;
 }
 
+
 .inicio__retrato{
     width: 150px;
     height:155px;
     border-radius:160px;
     border: 1px solid #b98f10;
-    margin-top: 2rem;
-    animation: name duration timing-function delay iteration-count direction fill-mode;
+    margin-top: 5rem;
+    
 }
 
 .inicio__nombre{
     text-align: center;
-    margin-top: 1rem;
+    margin-top: 2rem;
 }

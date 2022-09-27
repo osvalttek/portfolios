@@ -1,19 +1,17 @@
-.xp{
+.proyectos-titulo{
     margin: 1rem;
     line-height: 1.5rem;
     display: flex;
     flex-direction: column;
 }
-
-.xp__detalle{
+.proyectos__titulo-pagina{
     /* text-align: left;
     margin: 1.5rem; */
     margin-top: 1rem;
     line-height: 2rem;
     text-align: justify;
 }
-
-.xp__pagina{
+.proyectos__pagina{
     font-size: large;
     text-align: center;
     margin-top: 1rem;
@@ -21,42 +19,34 @@
     filter: drop-shadow(1px 1px 5px var(--colorbody));
 }
 
-.tabla{
-    list-style: none;
+.proyectos--desc{
+    text-align: center;
+}
+
+.proyectos__det{
     display: flex;
     flex-wrap: wrap;
+    flex-direction: column;    
     align-items: center;
-    justify-content: space-evenly;    
 }
 
-.tabla__item--HCJ{
-    width: 11rem;
-    height: auto;
+.proyectos__tabla{
+    list-style: none;
 }
 
-.tabla__item{
-    width: 7rem;
-    height: auto;
+.proyectos__item{
+    margin: 2rem 0rem;
 }
 
-.tabla__item--python{
-    width: 4rem;
-    height: auto;
-}
-
-.xp__cv{
-    margin-top: 1rem;
+.proyectos__item > a{
+    text-decoration: none;
+    color: black;
     text-align: center;
 }
 
-.xp__detalle{
-    text-align: center;
+.proyectos__item > a > img{
+    width: 150px;
+    height: auto;
+    min-width: 100px;
+    max-width: 350px ;
 }
-
-.cv__boton{
-    font-size: 1rem;
-    padding: .1rem;
-    margin: .2rem .2rem;
-}
-
-
