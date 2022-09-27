@@ -4,9 +4,104 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Contacto | Kevin Conde</title>
+    <link rel="icon" href="../IMG/kcdLogo-pestaña.png" class="icono-pestaña">
+    <link rel="stylesheet" href="../CSS/root.css">
+    <link rel="stylesheet" href="../CSS/header.css">
+    <link rel="stylesheet" href="../CSS/footer.css">
+    <link rel="stylesheet" href="../CSS/AcercaDeMi.css">
+    <link rel="stylesheet" href="../CSS/contacto.css">
 </head>
 <body>
+    <header class="header">
+                
+        <a href="../HTML/Inicio.html">
+            <img class="header__logo" src="../IMG/kcdLogo-01.png" alt="logotipo">
+        </a>
+        
+        <input type="checkbox" id="menu" class="menuCheck">
+        <label for="menu" class="linkMobile burgerMenu">
+            <img
+                src="../IMG/burgerMenuWhite.png"
+                alt="Burguer Menu"
+                class="menuIcon"
+            />
+        </label>
+        
+        <label for="menu" class="linkMobile closeMenu">
+            <img
+                src="../IMG/closeMenuWhite.png"
+                alt="close Menu"
+                class="menuIcon"
+            />
+        </label>
+        <nav class="navMobile">
+            <a href="../HTML/Inicio.html" class="navMobile__item">Inicio</a>
+            <a href="../HTML/AcercaDeMi.html" class="navMobile__item">Acerca de Mi</a>
+            <a href="../HTML/xp.html" class="navMobile__item">Experiencia</a>
+            <a href="../HTML/Proyectos.html" class="navMobile__item">Proyectos</a>
+            <a href="#" class="navMobile__item">Contactame</a>
+        </nav>         
+    </header>
+
+
+    <main>
+        <section class="contacto">
+            <div class="contacto__detalle">
+                <h1 class="contacto__pagina">Experencia</h1>
+            </div>
+        </section>
+        <section class="formulario">
+            <form action="https://formspree.io/f/xlevbzoo" method="post"class="formulario__detalle">
+
+                <label for="name" class="label-item">Nombre</label>
+                <input type="text" id="name" class="input-item">
+
+                <label for="last" class="label-item">Apellido</label>
+                <input type="text" id="last" class="input-item">
+
+                <label for="email" class="label-item">Escribe tu correo</label>
+                <input type="email" id="email" class="input-item">
+                
+                <label for="mensaje" class="label-item--mensaje">Mensaje</label>
+                <textarea name="user_message" id="mensaje" cols="30" rows="10" placeholder="Escribe tu mensaje" class="label-item--mensaje"></textarea>
+                
+                <button type="submit" class="boton-submint">Enviar mensaje</button>
+            </form>
+        </section>
+
+    </main>
+
+    <footer class="footer">
+
+        <section class="footer__info">
+            
+            <div class="direccion">
+                <p class="direccion__detalle">
+                    Location: Monterrey Nuevo León(México) o remoto <br>
+                    Contact: (+52) 812153309 o
+                    <a href="../HTML/Contactame.html" class="send-email">mandame email</a>
+                </p>
+            </div>
+            
+            <nav class="redes__menu">
+                <a class="redes__enlace" href="https://www.linkedin.com/in/Kevin-Conde-Jimenez">
+                    <img class="redes-icon__item" src="../IMG/linkedInLogo.jpg" alt="linkedIn">
+                </a>
+                <a class="redes__enlace" href="https://github.com/CondeJimenez">
+                    <img class="redes-icon__item--git" src="../IMG/gitHubLogo.jpg" alt="GitHub">
+                </a>            
+                    <a class="redes__enlace" href="https://www.facebook.com/kevin.conde.1232">
+                    <img class="redes-icon__item" src="../IMG/fbLogo.jpg" alt="facebook">
+                </a>
+            </nav>
+            <div class="derechos">
+                <p class="derechos__autor">Built by Kevin Conde</p>
+            </div>
+        </section>   
+    </footer>
+
+
     
 </body>
 </html>
