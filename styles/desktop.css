@@ -1,14 +1,99 @@
 @media (min-width: 400px) {
-    .grid-container {
-      grid-template:
-        "header" 86px
-        "main" auto
-        "footer"  75px /
-        auto;
-    }
+  body{
+    font-family: var(--extras);
+    font-size: 1.2rem;
+    color: var(--white);
+    min-height: 100vh;
+    width: 100%;
+  }
+  
+  .grid-container {
+   display: grid;
+   grid-template: 
+    "header" 86px
+    "main" auto /
+    auto;
+  }
+  
+  header {
+    grid-area: header;
+    position:fixed;
+    z-index: 1;
+    background-color: #151515;
+    header: 20vh;
+    width: 100%;
+    color: var(--dorado);
+    font-family: var(--extras);
+  }
+  
+  header img{
+    height: 50px;
+    margin-left: 30px;
+    margin-top: 10px;
+  }
+  
+  main {
+      min-height: 100%;
+      grid-area: main;
+      background-color: #141414;
+  }
+  section{
+    height: 100%;
+  }
+  .home__presentacion{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+  .home__presentacion .soyAO{
+    position:relative;
+    margin-right: 40px;
+    width: 350px;
+  }
+   .flecha{
+    position: relative;
+    align-items: center;
+    margin-left: 50%;
+    width: 50px;
+    -webkit-animation: movingimage linear 1s 1s infinite alternate;
+    -moz-animation: movingimage linear 1s 1s infinite alternate;
+    animation: movingimage linear 1s 1s infinite alternate;
+  }
+  @-webkit-keyframes movingimage{
+    0%{ opacity: 1; top:0px; }
+    25%{ opacity: 1; top: 3px; }
+    50%{ opacity: 1;  top: 8px; }
+    75%{ opacity: 1;  top:3px; }
+    100%{opacity: 1;  top: 0px;}
+  }
+  @-keyframes movingimage{
+    0%{ opacity: 1; top:0px; }
+    25%{ opacity: 1; top: 3px; }
+    50%{ opacity: 1; top: 8px; }
+    75%{ opacity: 1; top: 3px; }
+    100%{opacity: 1;  top: 0px;}
+  }
+  
+  .home__presentacion__txtPrin{
+    position: static;
+  }
+  
+  .home__presentacion__txtPrin h1{
+    color: var(--blanco);
+    font-family: var(--principal);
+    font-size: 39px;
+  }
+  
+  .home__presentacion__txtPrin h2{
+    color: var(--dorado);
+    font-family: var(--textos);
+    font-size: 20px;
+  }
+  
+  .home__presentacion__txtPrin h3{
+    color: var(--blanco);
+    font-family: var(--textos);
+    font-size: 17px;
+  }
 
-    footer {
-        grid-area: footer;
-        background-color: red;
-      }
   }

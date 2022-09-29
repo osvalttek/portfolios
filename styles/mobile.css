@@ -24,6 +24,7 @@
 body{
   font-family: var(--extras);
   font-size: 1.2rem;
+  color: var(--white);
   min-height: 100vh;
   width: 100vw;
 }
@@ -33,15 +34,16 @@ body{
  grid-template: 
   "header" 86px
   "main" auto /
-  auto;
+  100vw;
 }
 
 header {
   grid-area: header;
   position:fixed;
+  z-index: 1;
   background-color: #151515;
   header: 20vh;
-  width: 100%;
+  width: 100vw;
   color: var(--dorado);
   font-family: var(--extras);
 }
@@ -57,22 +59,19 @@ main {
     grid-area: main;
     background-color: #141414;
 }
-.home{
+section{
   height: 100vh;
 }
 .home__presentacion{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
 }
 .home__presentacion .soyAO{
   position:static;
-  margin-top: 50px;
+  margin-top: 5px;
   width: 370px;
 }
-.home__presentacion .flecha{
+ .flecha{
   position: relative;
-  margin-top: 30px;
+  
   width: 50px;
 	-webkit-animation: movingimage linear 1s 1s infinite alternate;
 	-moz-animation: movingimage linear 1s 1s infinite alternate;
@@ -95,7 +94,7 @@ main {
 
 .home__presentacion__txtPrin{
   position: absolute;
-  margin-top: 430px;
+  margin-top: 350px;
   margin-left: 20px;
 }
 
